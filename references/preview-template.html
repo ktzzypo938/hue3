@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Preview — {{PALETTE_NAME}}</title>
+<style>
+  /* ==========================================
+     CSS Variables — AI fills in color values here
+     ========================================== */
+  :root {
+    /* Triadic base */
+    --primary:   {{PRIMARY}};
+    --secondary: {{SECONDARY}};
+    --accent:    {{ACCENT}};
+
+    /* Extended system */
+    --bg:      {{BACKGROUND}};
+    --surface:  {{SURFACE}};
+    --text:     {{TEXT}};
+    --border:   {{BORDER}};
+
+    /* Accent states */
+    --accent-hover: {{ACCENT_HOVER}};
+    --accent-text:  #ffffff;
+
+    --radius: 12px;
+  }
+
+  /* Dark mode (optional — remove this block if not used) */
+  .dark {
+    --primary:   {{DARK_PRIMARY}};
+    --secondary: {{DARK_SECONDARY}};
+    --accent:    {{DARK_ACCENT}};
+    --bg:        {{DARK_BACKGROUND}};
+    --surface:   {{DARK_SURFACE}};
+    --text:      {{DARK_TEXT}};
+    --border:    {{DARK_BORDER}};
+    --accent-hover: {{DARK_ACCENT_HOVER}};
+  }
+
+  /* ==========================================
+     Base styles — do not modify
+     ========================================== */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    transition: background .3s, color .3s;
+  }
+
+  /* Layout */
+  .container { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+  /* ---- Toolbar ---- */
+  .toolbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 1.5rem;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; z-index: 10;
+  }
+  .toolbar h1 { font-size: 1.1rem; color: var(--text); }
+  .toggle-dark {
+    background: var(--secondary); color: #fff; border: none;
+    padding: .45rem 1rem; border-radius: var(--radius); cursor: pointer;
+    font-size: .85rem;
+  }
+
+  /* ---- Swatches ---- */
+  .swatches { display: flex; gap: .5rem; margin: 2rem 0; flex-wrap: wrap; }
+  .swatch {
+    flex: 1 1 120px; min-height: 90px; border-radius: var(--radius);
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: .6rem .8rem; font-size: .75rem; font-weight: 600;
+    border: 1px solid var(--border);
+  }
+  .swatch span { opacity: .85; }
+  .swatch.primary   { background: var(--primary); }
+  .swatch.secondary { background: var(--secondary); }
+  .swatch.accent    { background: var(--accent); color: var(--accent-text); }
+  .swatch.bg-swatch { background: var(--bg); }
+  .swatch.surface   { background: var(--surface); }
+  .swatch.text-sw   { background: var(--text); color: var(--bg); }
+  .swatch.border-sw { background: var(--border); }
+
+  /* ---- Hero ---- */
+  .hero {
+    background: var(--primary);
+    border-radius: var(--radius);
+    padding: 3rem 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .hero h2 { font-size: 1.8rem; color: var(--text); margin-bottom: .5rem; }
+  .hero p  { color: var(--text); opacity: .8; max-width: 560px; }
+
+  /* ---- Cards ---- */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin-bottom: 2rem; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    display: flex; flex-direction: column; gap: .75rem;
+  }
+  .card h3 { font-size: 1.1rem; }
+  .card p  { font-size: .9rem; opacity: .85; flex: 1; }
+
+  /* ---- Buttons ---- */
+  .btn {
+    display: inline-block; padding: .6rem 1.4rem; border-radius: var(--radius);
+    font-size: .9rem; font-weight: 600; border: none; cursor: pointer;
+    text-decoration: none; text-align: center; transition: background .2s;
+  }
+  .btn-accent  { background: var(--accent); color: var(--accent-text); }
+  .btn-accent:hover { background: var(--accent-hover); }
+  .btn-outline {
+    background: transparent; color: var(--secondary);
+    border: 2px solid var(--secondary);
+  }
+  .btn-outline:hover { background: var(--secondary); color: #fff; }
+  .btn-group { display: flex; gap: .75rem; flex-wrap: wrap; }
+
+  /* ---- Form ---- */
+  .form-demo { margin-bottom: 2rem; }
+  .form-demo label { display: block; font-size: .85rem; margin-bottom: .3rem; font-weight: 600; }
+  .form-demo input, .form-demo select {
+    width: 100%; padding: .55rem .8rem; border-radius: var(--radius);
+    border: 1px solid var(--border); background: var(--surface);
+    color: var(--text); font-size: .9rem; margin-bottom: 1rem;
+    outline: none; transition: border-color .2s;
+  }
+  .form-demo input:focus, .form-demo select:focus { border-color: var(--accent); }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+  /* ---- Navbar ---- */
+  .nav-demo {
+    background: var(--secondary);
+    border-radius: var(--radius);
+    padding: .8rem 1.5rem;
+    display: flex; gap: 1.5rem; align-items: center;
+    margin-bottom: 2rem; flex-wrap: wrap;
+  }
+  .nav-demo a {
+    color: #fff; text-decoration: none; font-size: .9rem; opacity: .85;
+    transition: opacity .2s;
+  }
+  .nav-demo a:hover { opacity: 1; }
+  .nav-demo a.active { opacity: 1; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+
+  /* ---- Typography ---- */
+  .typography { margin-bottom: 2rem; }
+  .typography h2 { margin-bottom: .5rem; }
+  .typography p  { max-width: 640px; margin-bottom: .75rem; font-size: .95rem; }
+  .typography .highlight { color: var(--accent); font-weight: 600; }
+  .typography .muted { opacity: .55; font-size: .85rem; }
+
+  /* ---- Footer ---- */
+  .footer {
+    text-align: center; padding: 2rem 0; margin-top: 2rem;
+    border-top: 1px solid var(--border);
+    font-size: .8rem; opacity: .5;
+  }
+</style>
+</head>
+<body>
+
+<!-- Toolbar -->
+<div class="toolbar">
+  <h1>{{PALETTE_NAME}}</h1>
+  <button class="toggle-dark" onclick="document.body.classList.toggle('dark'); this.textContent = document.body.classList.contains('dark') ? '☀️ Light Mode' : '🌙 Dark Mode'">🌙 Dark Mode</button>
+</div>
+
+<div class="container">
+
+  <!-- Swatches -->
+  <section>
+    <h2 style="margin-bottom:.5rem;">Color Swatches</h2>
+    <div class="swatches">
+      <div class="swatch primary"><span>Primary 60%</span></div>
+      <div class="swatch secondary"><span>Secondary 30%</span></div>
+      <div class="swatch accent"><span>Accent 10%</span></div>
+      <div class="swatch bg-swatch"><span>Background</span></div>
+      <div class="swatch surface"><span>Surface</span></div>
+      <div class="swatch text-sw"><span>Text</span></div>
+      <div class="swatch border-sw"><span>Border</span></div>
+    </div>
+  </section>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Primary Color at Scale</h2>
+    <p>This section uses the primary color as background, demonstrating how the dominant 60% area feels. Whether the text remains readable here is a quick gut-check for contrast compliance.</p>
+  </section>
+
+  <!-- Navbar -->
+  <nav class="nav-demo">
+    <a href="#" class="active">Home</a>
+    <a href="#">Products</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Cards -->
+  <section class="cards">
+    <div class="card">
+      <h3>Card Title</h3>
+      <p>Surface color paired with border. This card demonstrates container layering on the background and body text readability.</p>
+      <div><button class="btn btn-accent">Primary Action</button></div>
+    </div>
+    <div class="card">
+      <h3>Another Card</h3>
+      <p>Varying content length should still maintain visual balance. Is the accent button contrast sufficient on the surface?</p>
+      <div><button class="btn btn-outline">Secondary Action</button></div>
+    </div>
+    <div class="card">
+      <h3>Third Card</h3>
+      <p>Three cards simulate a real grid layout. Check whether borders remain visible across light and dark modes.</p>
+      <div class="btn-group">
+        <button class="btn btn-accent">Confirm</button>
+        <button class="btn btn-outline">Cancel</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section class="form-demo">
+    <h2 style="margin-bottom:1rem;">Form Elements</h2>
+    <div class="form-row">
+      <div>
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name">
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email" placeholder="hello@example.com">
+      </div>
+    </div>
+    <label>Category</label>
+    <select>
+      <option>Select an option</option>
+      <option>Option A</option>
+      <option>Option B</option>
+    </select>
+    <button class="btn btn-accent">Submit</button>
+  </section>
+
+  <!-- Typography -->
+  <section class="typography">
+    <h2>Typography Preview</h2>
+    <p>Body text displayed on the background color. This paragraph is long enough for you to judge overall reading comfort. Line height, letter spacing, and contrast all affect the final user experience.</p>
+    <p>Here is an <span class="highlight">accent-colored highlight</span> to check whether the accent color remains legible when used as inline text.</p>
+    <p class="muted">This is secondary information rendered at reduced opacity, simulating footnotes or supplementary details.</p>
+  </section>
+
+  <footer class="footer">Color Preview · Generated by Triadic Color System</footer>
+</div>
+
+</body>
+</html>
