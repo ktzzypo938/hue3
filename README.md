@@ -1,12 +1,26 @@
 # 🎨 hue3 — Triadic Color Palette Advisor for Claude Code
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai/claude-code)
+[![Palettes](https://img.shields.io/badge/Palettes-45-ff6b6b)]()
+[![Styles](https://img.shields.io/badge/Styles-9-4ecdc4)]()
+
 > **Three colors. One system. Every mood.**
 
 A [Claude Code](https://claude.ai/claude-code) skill that generates beautiful, production-ready color palettes from just three colors using triadic color theory.
 
-**[Live Demo →](https://ktzzypo938.github.io/hue3/)**
+**[Live Demo →](https://ktzzypo938.github.io/hue3/)** — Browse all 45 palettes with instant preview
 
 ![hue3 preview — 45 palettes across 9 styles](preview.png)
+
+## Why hue3?
+
+Most color tools give you a color wheel and leave you on your own. hue3 is different:
+
+- **You describe a mood**, not a hex code — say "cozy Nordic cabin" and get a complete palette
+- **Every palette is battle-tested** — curated with proper 60-30-10 ratio, not random generation
+- **Instant design system** — not just 3 colors, but background, surface, text, border all derived
+- **WCAG built-in** — accessibility isn't an afterthought, it's checked on every output
 
 ## Features
 
@@ -34,9 +48,9 @@ A [Claude Code](https://claude.ai/claude-code) skill that generates beautiful, p
 | 💻 Tech | AI, cyberpunk, terminal, space, startup | 5 |
 | 🏮 Taiwanese | temple, night market, tea culture, indie, tin roof | 5 |
 
-## Installation
+## Quick Start
 
-### For all projects (recommended)
+### Installation
 
 ```bash
 git clone https://github.com/ktzzypo938/hue3.git
@@ -45,36 +59,26 @@ cp hue3/SKILL.md ~/.claude/skills/hue3/
 cp -r hue3/references ~/.claude/skills/hue3/
 ```
 
-### For a single project
+That's it. Open any Claude Code session and start asking about colors.
 
-```bash
-git clone https://github.com/ktzzypo938/hue3.git
-mkdir -p .claude/skills/hue3
-cp hue3/SKILL.md .claude/skills/hue3/
-cp -r hue3/references .claude/skills/hue3/
-```
+### Usage
 
-## Usage
-
-Once installed, the skill activates automatically when you mention colors, palettes, or visual design in Claude Code.
-
-### Automatic trigger
-
-Just describe what you need:
+The skill activates automatically when you mention colors, palettes, or visual design:
 
 ```
 > I need a color scheme for a Japanese wabi-sabi style website
 > Give me colors that feel like a Nordic winter cabin
 > What palette would work for a cyberpunk dashboard?
+> Make it feel like a Taiwanese night market
 ```
 
-### Manual trigger
+Or trigger it manually:
 
 ```
 > /color-palettes
 ```
 
-### Example output
+### What you get
 
 Each recommendation includes:
 
@@ -84,9 +88,11 @@ Each recommendation includes:
 4. **Accessibility check** — WCAG AA contrast ratios
 5. **HTML preview** — a single-file website you can open in any browser
 
-## Preview Template
+## Preview Gallery
 
-The skill includes `references/preview-template.html` — a responsive HTML page with:
+Open `preview-all.html` in your browser to browse all 45 palettes with a live UI preview. Use **↑↓ arrow keys** to quickly flip through palettes.
+
+The skill also includes `references/preview-template.html` — a single-palette preview with:
 
 - Color swatches (all 7 roles side by side)
 - Hero section (primary color at scale)
@@ -102,10 +108,13 @@ The skill includes `references/preview-template.html` — a responsive HTML page
 hue3/
 ├── SKILL.md                          # Main skill definition
 ├── README.md                         # This file
+├── LICENSE                           # MIT License
 ├── preview-all.html                  # Interactive gallery (all 45 palettes)
+├── index.html                        # GitHub Pages entry point
+├── preview.png                       # Social preview image
 └── references/
     ├── color-theory.md               # Theory: HSL, triadic structures, 60-30-10, WCAG
-    ├── preview-template.html         # HTML preview template
+    ├── preview-template.html         # Single-palette HTML preview template
     ├── nature.md                     # 🌿 5 nature palettes
     ├── trendy.md                     # 🔥 5 trendy palettes
     ├── mature.md                     # 🎩 5 mature palettes
@@ -117,10 +126,21 @@ hue3/
     └── taiwanese.md                  # 🏮 5 Taiwanese palettes
 ```
 
+## Contributing
+
+Contributions are welcome! Here are some ways you can help:
+
+- **Add new style categories** — Korean, Mediterranean, Art Deco, Bauhaus...
+- **Improve existing palettes** — better color choices, more refined harmony
+- **Add new features to SKILL.md** — gradient generation, color blindness simulation
+- **Translate** — add more bilingual color names or translate the skill workflow
+
+Please open an issue first to discuss what you'd like to change.
+
 ## Inspiration
 
 This skill's three-color philosophy and mood-first approach were inspired by the Japanese design community's emphasis on constraint-driven palette design — particularly the idea that just three well-chosen colors can be more effective than a complex palette. The 60-30-10 ratio and triadic color structures are rooted in classic design education.
 
 ## License
 
-MIT
+[MIT](LICENSE)
