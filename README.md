@@ -10,8 +10,19 @@
 A [Claude Code](https://claude.ai/claude-code) skill that generates beautiful, production-ready color palettes from just three colors using triadic color theory.
 
 **[Live Demo →](https://ktzzypo938.github.io/hue3/)** — Browse all 45 palettes with instant preview
+**[Wikipedia Before & After →](https://ktzzypo938.github.io/hue3/wikipedia-before-after.html)** — See hue3 transform a familiar website
 
 ![hue3 preview — 45 palettes across 9 styles](preview.png)
+
+### Wikipedia Before & After
+
+Same page, different mood — 10 hue3 palettes applied to Wikipedia's layout:
+
+| Before (Original) | After (Cyberpunk / TEC-02) |
+|:--:|:--:|
+| ![Wikipedia Original](wiki-before.png) | ![Wikipedia with Cyberpunk palette](wiki-after.png) |
+
+**[Try it yourself →](https://ktzzypo938.github.io/hue3/wikipedia-before-after.html)** — Switch between 10 styles with one click
 
 ## Why hue3?
 
@@ -110,8 +121,11 @@ hue3/
 ├── README.md                         # This file
 ├── LICENSE                           # MIT License
 ├── preview-all.html                  # Interactive gallery (all 45 palettes)
+├── wikipedia-before-after.html       # Wikipedia reskin demo (10 styles)
 ├── index.html                        # GitHub Pages entry point
 ├── preview.png                       # Social preview image
+├── wiki-before.png                   # Wikipedia demo — before screenshot
+├── wiki-after.png                    # Wikipedia demo — after screenshot
 └── references/
     ├── color-theory.md               # Theory: HSL, triadic structures, 60-30-10, WCAG
     ├── preview-template.html         # Single-palette HTML preview template

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>hue3 × Wikipedia — Before & After</title>
+<style>
+  /* ==========================================
+     Theme Definitions
+     ========================================== */
+  :root {
+    --primary: #F8F9FA;
+    --secondary: #3366CC;
+    --accent: #3366CC;
+    --bg: #FFFFFF;
+    --surface: #F8F9FA;
+    --text: #202122;
+    --border: #A2A9B1;
+    --link: #3366CC;
+    --link-visited: #795CB2;
+    --toc-bg: #F8F9FA;
+    --infobox-bg: #F8F9FA;
+    --infobox-header: #CCCCFF;
+    --tab-active-border: #3366CC;
+    --notice-bg: #FEF6E7;
+    --notice-border: #FFC107;
+    --category-bg: #F8F9FA;
+  }
+
+  /* JPN-01 Wabi-sabi */
+  .theme-wabisabi {
+    --primary: #B5ADA2; --secondary: #8A8075; --accent: #5A5047;
+    --bg: #F6F4F0; --surface: #ECE8E2; --text: #2D2924; --border: #CBC5BB;
+    --link: #7A6B5D; --link-visited: #6B5E52;
+    --toc-bg: #ECE8E2; --infobox-bg: #ECE8E2; --infobox-header: #B5ADA2;
+    --tab-active-border: #5A5047; --notice-bg: #ECE8E2; --notice-border: #B5ADA2; --category-bg: #ECE8E2;
+  }
+
+  /* NRD-04 Aurora Night Sky */
+  .theme-aurora {
+    --primary: #121E30; --secondary: #48A878; --accent: #8868A8;
+    --bg: #0A1018; --surface: #121E30; --text: #C8D8E8; --border: #1E3048;
+    --link: #48A878; --link-visited: #8868A8;
+    --toc-bg: #121E30; --infobox-bg: #121E30; --infobox-header: #1E3048;
+    --tab-active-border: #48A878; --notice-bg: #1A2840; --notice-border: #48A878; --category-bg: #121E30;
+  }
+
+  /* TEC-02 Cyberpunk */
+  .theme-cyberpunk {
+    --primary: #101020; --secondary: #30E0B8; --accent: #E04888;
+    --bg: #0A0A14; --surface: #101020; --text: #B8E8D8; --border: #1A2828;
+    --link: #30E0B8; --link-visited: #E04888;
+    --toc-bg: #101020; --infobox-bg: #101020; --infobox-header: #1A2828;
+    --tab-active-border: #30E0B8; --notice-bg: #181830; --notice-border: #E04888; --category-bg: #101020;
+  }
+
+  /* TWN-01 Temple Gold & Red */
+  .theme-temple {
+    --primary: #A83030; --secondary: #C89820; --accent: #306848;
+    --bg: #FFF8F5; --surface: #F8E8E0; --text: #2A0A0A; --border: #D0A8A0;
+    --link: #8B2020; --link-visited: #6A1818;
+    --toc-bg: #F8E8E0; --infobox-bg: #F8E8E0; --infobox-header: #A83030;
+    --tab-active-border: #C89820; --notice-bg: #F8E8E0; --notice-border: #C89820; --category-bg: #F8E8E0;
+  }
+
+  /* TWN-02 Night Market Neon */
+  .theme-nightmarket {
+    --primary: #181818; --secondary: #D84888; --accent: #48C870;
+    --bg: #101010; --surface: #1E1E1E; --text: #F0ECE8; --border: #383838;
+    --link: #D84888; --link-visited: #48C870;
+    --toc-bg: #1E1E1E; --infobox-bg: #1E1E1E; --infobox-header: #383838;
+    --tab-active-border: #D84888; --notice-bg: #282828; --notice-border: #48C870; --category-bg: #1E1E1E;
+  }
+
+  /* RET-02 80s Neon */
+  .theme-80sneon {
+    --primary: #D860A0; --secondary: #48C878; --accent: #40C8D8;
+    --bg: #0E0A14; --surface: #181420; --text: #F0E0F0; --border: #2E2840;
+    --link: #D860A0; --link-visited: #40C8D8;
+    --toc-bg: #181420; --infobox-bg: #181420; --infobox-header: #2E2840;
+    --tab-active-border: #D860A0; --notice-bg: #201828; --notice-border: #48C878; --category-bg: #181420;
+  }
+
+  /* RET-04 Old Newspaper */
+  .theme-newspaper {
+    --primary: #F2E4D0; --secondary: #7A4828; --accent: #A83030;
+    --bg: #FAF3E8; --surface: #F0E4D0; --text: #2C1A0A; --border: #D4BFA6;
+    --link: #7A4828; --link-visited: #5A3820;
+    --toc-bg: #F0E4D0; --infobox-bg: #F0E4D0; --infobox-header: #E8D4B8;
+    --tab-active-border: #A83030; --notice-bg: #F0E4D0; --notice-border: #D4BFA6; --category-bg: #F0E4D0;
+  }
+
+  /* MAT-01 Royal Purple & Gold */
+  .theme-royal {
+    --primary: #2C2040; --secondary: #6E54A0; --accent: #C8A850;
+    --bg: #100C18; --surface: #1E1830; --text: #E2DAF0; --border: #3C2E58;
+    --link: #C8A850; --link-visited: #6E54A0;
+    --toc-bg: #1E1830; --infobox-bg: #1E1830; --infobox-header: #2C2040;
+    --tab-active-border: #C8A850; --notice-bg: #241C38; --notice-border: #6E54A0; --category-bg: #1E1830;
+  }
+
+  /* NAT-03 Deep Sea */
+  .theme-deepsea {
+    --primary: #2B5C6E; --secondary: #6A9BAD; --accent: #B5D5D8;
+    --bg: #F2F7F8; --surface: #E4EEF0; --text: #112530; --border: #ACC5CC;
+    --link: #2B5C6E; --link-visited: #1E4050;
+    --toc-bg: #E4EEF0; --infobox-bg: #E4EEF0; --infobox-header: #6A9BAD;
+    --tab-active-border: #2B5C6E; --notice-bg: #E4EEF0; --notice-border: #6A9BAD; --category-bg: #E4EEF0;
+  }
+
+  /* TRD-04 Street Graffiti */
+  .theme-graffiti {
+    --primary: #1A1A28; --secondary: #E07040; --accent: #40B878;
+    --bg: #141418; --surface: #1E1E2A; --text: #E8E4E0; --border: #3A3A48;
+    --link: #E07040; --link-visited: #40B878;
+    --toc-bg: #1E1E2A; --infobox-bg: #1E1E2A; --infobox-header: #3A3A48;
+    --tab-active-border: #E07040; --notice-bg: #282838; --notice-border: #40B878; --category-bg: #1E1E2A;
+  }
+
+  /* ==========================================
+     Base Reset
+     ========================================== */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: "Linux Libertine", "Georgia", "Times", serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    transition: background .35s, color .35s;
+  }
+
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ==========================================
+     Theme Switcher — Sidebar Panel
+     ========================================== */
+  .theme-panel {
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    width: 260px;
+    background: #111122;
+    color: #fff;
+    z-index: 1000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 0 24px rgba(0,0,0,.5);
+    transition: transform .3s ease;
+  }
+  .theme-panel.collapsed {
+    transform: translateX(-260px);
+  }
+  .panel-header {
+    padding: 20px 18px 14px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+  .panel-header h2 {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    margin-bottom: 2px;
+  }
+  .panel-header p {
+    font-size: 11px;
+    opacity: .5;
+    line-height: 1.4;
+  }
+  .panel-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px 0;
+  }
+  .panel-list::-webkit-scrollbar { width: 4px; }
+  .panel-list::-webkit-scrollbar-thumb { background: rgba(255,255,255,.15); border-radius: 4px; }
+
+  .theme-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: rgba(255,255,255,.65);
+    font-size: 13px;
+    font-family: inherit;
+    width: 100%;
+    text-align: left;
+    transition: all .15s;
+    border-left: 3px solid transparent;
+  }
+  .theme-item:hover {
+    background: rgba(255,255,255,.06);
+    color: #fff;
+  }
+  .theme-item.active {
+    background: rgba(255,255,255,.1);
+    color: #fff;
+    border-left-color: #fff;
+  }
+  .theme-dots {
+    display: flex;
+    gap: 3px;
+    flex-shrink: 0;
+  }
+  .theme-dots span {
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.2);
+  }
+  .theme-item .theme-label {
+    flex: 1;
+    line-height: 1.3;
+  }
+  .theme-item .theme-sub {
+    display: block;
+    font-size: 10px;
+    opacity: .45;
+  }
+  .theme-item .theme-tag {
+    font-size: 9px;
+    padding: 1px 6px;
+    border-radius: 8px;
+    background: rgba(255,255,255,.1);
+    color: rgba(255,255,255,.5);
+    flex-shrink: 0;
+  }
+
+  /* Toggle button */
+  .panel-toggle {
+    position: fixed;
+    top: 12px;
+    left: 268px;
+    z-index: 1001;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: #111122;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,.3);
+    transition: left .3s ease, transform .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .panel-toggle:hover { transform: scale(1.1); }
+  .panel-toggle.collapsed-btn { left: 12px; }
+
+  /* Panel footer */
+  .panel-footer {
+    padding: 12px 18px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    font-size: 11px;
+    opacity: .4;
+    text-align: center;
+  }
+  .panel-footer a { color: #48C870; }
+
+  /* ==========================================
+     Wikipedia Layout
+     ========================================== */
+  .wiki-wrapper {
+    margin-left: 260px;
+    transition: margin-left .3s ease;
+  }
+  .wiki-wrapper.expanded {
+    margin-left: 0;
+  }
+
+  /* Top banner */
+  .wiki-banner {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    transition: background .35s, border-color .35s;
+  }
+  .wiki-logo-text {
+    font-family: "Linux Libertine", Georgia, serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text);
+  }
+  .wiki-logo-text .w-mark {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; font-weight: 700;
+    color: var(--bg);
+    transition: background .35s, color .35s;
+  }
+  .wiki-subtitle {
+    font-size: 11px;
+    color: var(--text);
+    opacity: .6;
+    font-style: italic;
+  }
+  .wiki-banner-right {
+    margin-left: auto;
+    display: flex; gap: 12px;
+    font-size: 13px;
+  }
+
+  /* Search bar */
+  .wiki-search {
+    margin-left: auto;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .wiki-search input {
+    padding: 5px 10px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 13px;
+    width: 180px;
+    outline: none;
+    transition: border-color .2s, background .35s, color .35s;
+  }
+  .wiki-search input:focus { border-color: var(--link); }
+
+  /* Tabs */
+  .wiki-tabs {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    padding: 0 20px;
+    font-size: 13px;
+    transition: background .35s, border-color .35s;
+  }
+  .wiki-tab {
+    padding: 8px 16px;
+    color: var(--link);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color .35s;
+  }
+  .wiki-tab.active {
+    border-bottom-color: var(--tab-active-border);
+    font-weight: 600;
+  }
+
+  /* Content area */
+  .wiki-content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 24px;
+  }
+
+  /* Article title */
+  .wiki-title {
+    font-size: 28px;
+    font-weight: 400;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 4px;
+    margin-bottom: 16px;
+    font-family: "Linux Libertine", Georgia, serif;
+    transition: border-color .35s;
+  }
+
+  /* Notice box */
+  .wiki-notice {
+    background: var(--notice-bg);
+    border: 1px solid var(--notice-border);
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    display: flex;
+    gap: 8px;
+    transition: background .35s, border-color .35s;
+  }
+
+  /* Table of Contents */
+  .wiki-toc {
+    background: var(--toc-bg);
+    border: 1px solid var(--border);
+    padding: 12px 16px;
+    display: inline-block;
+    margin-bottom: 20px;
+    min-width: 260px;
+    transition: background .35s, border-color .35s;
+  }
+  .wiki-toc-title { font-weight: 700; text-align: center; margin-bottom: 8px; font-size: 14px; }
+  .wiki-toc ol { padding-left: 24px; font-size: 13px; }
+  .wiki-toc li { margin-bottom: 4px; }
+  .wiki-toc a { color: var(--link); }
+
+  /* Infobox */
+  .wiki-infobox {
+    float: right; width: 280px;
+    margin: 0 0 16px 20px;
+    border: 1px solid var(--border);
+    background: var(--infobox-bg);
+    font-size: 13px;
+    transition: background .35s, border-color .35s;
+  }
+  .wiki-infobox-header {
+    background: var(--infobox-header);
+    padding: 10px 12px;
+    text-align: center;
+    font-weight: 700; font-size: 15px;
+    transition: background .35s;
+  }
+  .wiki-infobox-img {
+    width: 100%; height: 160px;
+    background: var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 48px; opacity: .5;
+    transition: background .35s;
+  }
+  .wiki-infobox table { width: 100%; border-collapse: collapse; }
+  .wiki-infobox td {
+    padding: 4px 10px;
+    border-top: 1px solid var(--border);
+    vertical-align: top;
+    transition: border-color .35s;
+  }
+  .wiki-infobox td:first-child { font-weight: 600; width: 90px; }
+
+  /* Headings */
+  .wiki-content h2 {
+    font-size: 22px; font-weight: 400;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 2px; margin: 24px 0 12px;
+    font-family: "Linux Libertine", Georgia, serif;
+    transition: border-color .35s;
+  }
+  .wiki-content h3 { font-size: 17px; font-weight: 700; margin: 16px 0 8px; }
+  .wiki-content .edit-link { font-size: 12px; font-weight: 400; margin-left: 8px; }
+
+  /* Paragraphs */
+  .wiki-content p { margin-bottom: 12px; font-size: 14.5px; line-height: 1.65; }
+  sup { font-size: 10px; vertical-align: super; }
+  sup a { color: var(--link); }
+
+  /* Categories */
+  .wiki-categories {
+    background: var(--category-bg);
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    font-size: 12px;
+    margin-top: 30px;
+    border-radius: 3px;
+    transition: background .35s, border-color .35s;
+  }
+  .wiki-categories strong { margin-right: 6px; }
+  .wiki-categories a { margin-right: 8px; }
+
+  /* Footer */
+  .wiki-footer {
+    border-top: 1px solid var(--border);
+    margin-top: 20px;
+    padding: 16px 24px;
+    font-size: 11px;
+    opacity: .5;
+    text-align: center;
+    max-width: 960px;
+    margin-left: auto; margin-right: auto;
+    transition: border-color .35s;
+  }
+
+  /* Responsive */
+  @media (max-width: 800px) {
+    .wiki-infobox { float: none; width: 100%; margin: 0 0 16px 0; }
+    .theme-panel { width: 220px; }
+    .wiki-wrapper { margin-left: 220px; }
+    .panel-toggle { left: 228px; }
+    .panel-toggle.collapsed-btn { left: 12px; }
+    .wiki-search { display: none; }
+  }
+  @media (max-width: 560px) {
+    .theme-panel { width: 100%; }
+    .wiki-wrapper { margin-left: 0; }
+    .wiki-wrapper.expanded { margin-left: 0; }
+    .panel-toggle { left: auto; right: 12px; top: 12px; }
+    .panel-toggle.collapsed-btn { left: auto; right: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== Theme Panel (Sidebar) ===== -->
+<div class="theme-panel" id="themePanel">
+  <div class="panel-header">
+    <h2>hue3 &times; Wikipedia</h2>
+    <p>Click a palette or press &uarr;&darr; to switch. 10 styles from 45 curated palettes.</p>
+  </div>
+  <div class="panel-list" id="themeList">
+
+    <button class="theme-item active" data-theme="" data-index="0">
+      <div class="theme-dots">
+        <span style="background:#F8F9FA"></span>
+        <span style="background:#3366CC"></span>
+        <span style="background:#3366CC"></span>
+      </div>
+      <div class="theme-label">
+        Original
+        <span class="theme-sub">Wikipedia default</span>
+      </div>
+      <span class="theme-tag">BEFORE</span>
+    </button>
+
+    <button class="theme-item" data-theme="theme-wabisabi" data-index="1">
+      <div class="theme-dots">
+        <span style="background:#B5ADA2"></span>
+        <span style="background:#8A8075"></span>
+        <span style="background:#5A5047"></span>
+      </div>
+      <div class="theme-label">
+        Wabi-sabi / 侘寂
+        <span class="theme-sub">JPN-01 &middot; Analogous</span>
+      </div>
+    </button>
+
+    <button class="theme-item" data-theme="theme-temple" data-index="2">
+      <div class="theme-dots">
+        <span style="background:#A83030"></span>
+        <span style="background:#C89820"></span>
+        <span style="background:#306848"></span>
+      </div>
+      <div class="theme-label">
+        Temple / 廟宇
+        <span class="theme-sub">TWN-01 &middot; Modified Triadic</span>
+      </div>
+    </button>
+
+    <button class="theme-item" data-theme="theme-nightmarket" data-index="3">
+      <div class="theme-dots">
+        <span style="background:#181818"></span>
+        <span style="background:#D84888"></span>
+        <span style="background:#48C870"></span>
+      </div>
+      <div class="theme-label">
+        Night Market / 夜市
+        <span class="theme-sub">TWN-02 &middot; Modified Triadic</span>
+      </div>
+    </button>
+
+    <button class="theme-item" data-theme="theme-deepsea" data-index="4">
+      <div class="theme-dots">
+        <span style="background:#2B5C6E"></span>
+        <span style="background:#6A9BAD"></span>
+        <span style="background:#B5D5D8"></span>
+      </div>
+      <div class="theme-label">
+        Deep Sea / 深海
+        <span class="theme-sub">NAT-03 &middot; Analogous</span>
+      </div>
+    </button>
+
+    <button class="theme-item" data-theme="theme-newspaper" data-index="5">
+      <div class="theme-dots">
+        <span style="background:#F2E4D0"></span>
+        <span style="background:#7A4828"></span>
+        <span style="background:#A83030"></span>
+      </div>
+      <div class="theme-label">
+        Old Newspaper / 舊報紙
+        <span class="theme-sub">RET-04 &middot; Cool-Warm</span>
+      </div>
+    </button>
+
+    <button class="theme-item" data-theme="theme-80sneon" data-index="6">
+      <div class="theme-dots">
+        <span style="background:#D860A0"></span>
+        <span style="background:#48C878"></span>
+        <span style="background:#40C8D8"></span>
+      </div>
+      <div class="theme-label">
+        80s Neon / 霓虹
+        <span class="theme-sub">RET-02 &middot; Modified Triadic</span>
+      </div>
+    </button>
+
+    <button class="theme-item" data-theme="theme-royal" data-index="7">
+      <div class="theme-dots">
+        <span style="background:#2C2040"></span>
+        <span style="background:#6E54A0"></span>
+        <span style="background:#C8A850"></span>
+      </div>
+      <div class="theme-label">
+        Royal / 皇家紫金
+        <span class="theme-sub">MAT-01 &middot; Split-Comp.</span>
+      </div>
+    </button>
+
+    <button class="theme-item" data-theme="theme-aurora" data-index="8">
+      <div class="theme-dots">
+        <span style="background:#121E30"></span>
+        <span style="background:#48A878"></span>
+        <span style="background:#8868A8"></span>
+      </div>
+      <div class="theme-label">
+        Aurora / 極光
+        <span class="theme-sub">NRD-04 &middot; Modified Triadic</span>
+      </div>
+    </button>
+
+    <button class="theme-item" data-theme="theme-cyberpunk" data-index="9">
+      <div class="theme-dots">
+        <span style="background:#101020"></span>
+        <span style="background:#30E0B8"></span>
+        <span style="background:#E04888"></span>
+      </div>
+      <div class="theme-label">
+        Cyberpunk / 賽博
+        <span class="theme-sub">TEC-02 &middot; Split-Comp.</span>
+      </div>
+    </button>
+
+    <button class="theme-item" data-theme="theme-graffiti" data-index="10">
+      <div class="theme-dots">
+        <span style="background:#1A1A28"></span>
+        <span style="background:#E07040"></span>
+        <span style="background:#40B878"></span>
+      </div>
+      <div class="theme-label">
+        Graffiti / 塗鴉
+        <span class="theme-sub">TRD-04 &middot; Warm-Cool</span>
+      </div>
+    </button>
+
+  </div>
+  <div class="panel-footer">
+    Palette by <a href="https://github.com/ktzzypo938/hue3">hue3</a> &middot; &uarr;&darr; to navigate
+  </div>
+</div>
+
+<!-- Toggle button -->
+<button class="panel-toggle" id="panelToggle" title="Toggle palette panel">&laquo;</button>
+
+<!-- ===== Wikipedia Mockup ===== -->
+<div class="wiki-wrapper" id="wikiWrapper">
+
+  <!-- Banner -->
+  <div class="wiki-banner">
+    <div class="wiki-logo-text">
+      <div class="w-mark">W</div>
+      <div>
+        Wikipedia
+        <div class="wiki-subtitle">The Free Encyclopedia</div>
+      </div>
+    </div>
+    <div class="wiki-search">
+      <input type="text" placeholder="Search Wikipedia">
+    </div>
+    <div class="wiki-banner-right">
+      <a href="#">Talk</a>
+      <a href="#">Contributions</a>
+      <a href="#">Create account</a>
+      <a href="#">Log in</a>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="wiki-tabs">
+    <div class="wiki-tab active">Article</div>
+    <div class="wiki-tab">Talk</div>
+    <div class="wiki-tab">Read</div>
+    <div class="wiki-tab">Edit</div>
+    <div class="wiki-tab">View history</div>
+  </div>
+
+  <!-- Content -->
+  <div class="wiki-content">
+
+    <h1 class="wiki-title">Color theory</h1>
+
+    <!-- Notice -->
+    <div class="wiki-notice">
+      <span>&#9432;</span>
+      <span>This article needs additional citations for verification. Please help <a href="#">improve this article</a> by adding citations to reliable sources.</span>
+    </div>
+
+    <!-- Infobox -->
+    <div class="wiki-infobox">
+      <div class="wiki-infobox-header">Color Theory</div>
+      <div class="wiki-infobox-img">&#127912;</div>
+      <table>
+        <tr><td>Type</td><td>Visual arts, Design</td></tr>
+        <tr><td>Key people</td><td>Isaac Newton, Johann Wolfgang von Goethe, Johannes Itten</td></tr>
+        <tr><td>Related</td><td>Color wheel, Color harmony, Color model</td></tr>
+        <tr><td>Application</td><td>Art, Design, Architecture, Fashion</td></tr>
+      </table>
+    </div>
+
+    <p><b>Color theory</b> is both the science and art of using <a href="#">color</a>. It explains how humans perceive color; and the visual effects of how colors mix, match or contrast with each other. Color theory also involves the messages colors communicate; and the methods used to replicate color.<sup><a href="#">[1]</a></sup></p>
+
+    <p>In color theory, colors are organized on a <a href="#">color wheel</a> and grouped into three categories: <b>primary colors</b>, <b>secondary colors</b>, and <b>tertiary colors</b>. The study of color theory began with <a href="#">Isaac Newton</a>, who identified the visible spectrum of light.<sup><a href="#">[2]</a></sup></p>
+
+    <!-- TOC -->
+    <div class="wiki-toc">
+      <div class="wiki-toc-title">Contents</div>
+      <ol>
+        <li><a href="#">Color harmony</a>
+          <ol>
+            <li><a href="#">Triadic colors</a></li>
+            <li><a href="#">Complementary colors</a></li>
+            <li><a href="#">Analogous colors</a></li>
+          </ol>
+        </li>
+        <li><a href="#">Color models</a></li>
+        <li><a href="#">Cultural influences</a></li>
+        <li><a href="#">Applications in design</a></li>
+        <li><a href="#">See also</a></li>
+        <li><a href="#">References</a></li>
+      </ol>
+    </div>
+
+    <h2>Color harmony <span class="edit-link">[<a href="#">edit</a>]</span></h2>
+
+    <p><b>Color harmony</b> refers to the property that certain aesthetically pleasing color combinations have. These combinations create pleasing contrasts and consonances that are said to be harmonious. The key to successful color harmony is understanding the <a href="#">color wheel</a> and how colors relate to one another.<sup><a href="#">[3]</a></sup></p>
+
+    <h3>Triadic colors</h3>
+
+    <p>A <b>triadic color scheme</b> uses three colors equally spaced around the color wheel. The primary triadic combination is <span style="color:red">red</span>, <span style="color:#CCCC00">yellow</span>, and <span style="color:blue">blue</span>. This scheme is popular among artists because it offers strong visual contrast while retaining balance and color richness. The scheme is vibrant even when using pale or unsaturated versions of the hues.<sup><a href="#">[4]</a></sup></p>
+
+    <p>A common approach to using a triadic harmony is to select one dominant color (occupying about 60% of the design), a secondary color (30%), and use the third as an accent (10%). This <b>60-30-10 rule</b> creates visual hierarchy while maintaining the dynamic energy of the three-color structure.<sup><a href="#">[5]</a></sup></p>
+
+    <h3>Complementary colors</h3>
+
+    <p><b>Complementary colors</b> are pairs of colors which, when combined or mixed, cancel each other out by producing a grayscale color like white or black. When placed next to each other, they create the strongest contrast for those two colors. Complementary colors are useful in design for creating high-impact, vibrant compositions.<sup><a href="#">[6]</a></sup></p>
+
+    <h3>Analogous colors</h3>
+
+    <p><b>Analogous colors</b> are groups of three colors that are next to each other on the color wheel. They usually match well and create serene, comfortable designs. Analogous color schemes are often found in nature and are harmonious, pleasing to the eye. The key is to have enough contrast when using analogous colors.<sup><a href="#">[7]</a></sup></p>
+
+    <h2>Cultural influences <span class="edit-link">[<a href="#">edit</a>]</span></h2>
+
+    <p>Color perception and preference vary significantly across cultures. In <a href="#">Japanese aesthetics</a>, the concept of <i>wabi-sabi</i> (侘寂) emphasizes muted, desaturated palettes that express the beauty of imperfection and transience. <a href="#">Scandinavian design</a> favors clean whites and natural wood tones that evoke light and simplicity. <a href="#">Cyberpunk</a> visual culture, originating from science fiction, uses high-contrast neon colors against dark backgrounds to create a futuristic, dystopian atmosphere.<sup><a href="#">[8]</a></sup></p>
+
+    <h2>Applications in design <span class="edit-link">[<a href="#">edit</a>]</span></h2>
+
+    <p>Color theory is widely applied in <a href="#">graphic design</a>, <a href="#">web design</a>, <a href="#">interior design</a>, and <a href="#">fashion</a>. Designers use color relationships to create visual hierarchy, evoke emotions, and guide user attention. The rise of digital design has expanded the application of color theory, with tools that can generate harmonious palettes from a single base color or even from mood descriptions.<sup><a href="#">[9]</a></sup></p>
+
+    <p>Modern design systems often derive entire extended palettes — including background, surface, text, and border colors — from a core set of three harmonious colors. This approach ensures visual consistency across components while maintaining accessibility standards such as <a href="#">WCAG</a> contrast ratios.<sup><a href="#">[10]</a></sup></p>
+
+    <h2>See also <span class="edit-link">[<a href="#">edit</a>]</span></h2>
+    <ul style="font-size:14px; padding-left:24px; margin-bottom:12px;">
+      <li><a href="#">Color wheel</a></li>
+      <li><a href="#">Color model</a></li>
+      <li><a href="#">Color psychology</a></li>
+      <li><a href="#">Complementary colors</a></li>
+      <li><a href="#">Web colors</a></li>
+    </ul>
+
+    <!-- Categories -->
+    <div class="wiki-categories">
+      <strong>Categories:</strong>
+      <a href="#">Color</a>
+      <a href="#">Color theory</a>
+      <a href="#">Design</a>
+      <a href="#">Visual arts</a>
+      <a href="#">Aesthetics</a>
+    </div>
+
+    <div class="wiki-footer">
+      Mockup for demonstration purposes. Not affiliated with Wikipedia.<br>
+      Content is illustrative only. | Powered by hue3 triadic color system.
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Theme switching
+const items = document.querySelectorAll('.theme-item');
+items.forEach(item => {
+  item.addEventListener('click', () => {
+    document.body.className = item.dataset.theme;
+    items.forEach(i => i.classList.remove('active'));
+    item.classList.add('active');
+    item.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  });
+});
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+  if (e.target.tagName === 'INPUT') return;
+  const arr = [...items];
+  const idx = arr.findIndex(i => i.classList.contains('active'));
+  if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+    e.preventDefault();
+    arr[(idx + 1) % arr.length].click();
+  } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+    e.preventDefault();
+    arr[(idx - 1 + arr.length) % arr.length].click();
+  }
+});
+
+// Panel toggle
+const panel = document.getElementById('themePanel');
+const toggle = document.getElementById('panelToggle');
+const wrapper = document.getElementById('wikiWrapper');
+toggle.addEventListener('click', () => {
+  panel.classList.toggle('collapsed');
+  toggle.classList.toggle('collapsed-btn');
+  wrapper.classList.toggle('expanded');
+  toggle.textContent = panel.classList.contains('collapsed') ? '\u00BB' : '\u00AB';
+});
+</script>
+
+</body>
+</html>
