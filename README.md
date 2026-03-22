@@ -4,7 +4,7 @@
 
 A [Claude Code](https://claude.ai/claude-code) skill that generates beautiful, production-ready color palettes from just three colors using triadic color theory.
 
-**[Live Demo →](https://q27913588.github.io/hue3/)**
+**[Live Demo →](https://ktzzypo938.github.io/hue3/)**
 
 ## Features
 
@@ -37,7 +37,7 @@ A [Claude Code](https://claude.ai/claude-code) skill that generates beautiful, p
 ### For all projects (recommended)
 
 ```bash
-git clone https://github.com/q27913588/hue3.git
+git clone https://github.com/ktzzypo938/hue3.git
 mkdir -p ~/.claude/skills/hue3
 cp hue3/SKILL.md ~/.claude/skills/hue3/
 cp -r hue3/references ~/.claude/skills/hue3/
@@ -46,7 +46,7 @@ cp -r hue3/references ~/.claude/skills/hue3/
 ### For a single project
 
 ```bash
-git clone https://github.com/q27913588/hue3.git
+git clone https://github.com/ktzzypo938/hue3.git
 mkdir -p .claude/skills/hue3
 cp hue3/SKILL.md .claude/skills/hue3/
 cp -r hue3/references .claude/skills/hue3/
