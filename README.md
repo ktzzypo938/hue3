@@ -6,6 +6,8 @@ A [Claude Code](https://claude.ai/claude-code) skill that generates beautiful, p
 
 **[Live Demo →](https://ktzzypo938.github.io/hue3/)**
 
+![hue3 preview — 45 palettes across 9 styles](preview.png)
+
 ## Features
 
 - **45 curated palettes** across 9 style categories, each with 5 carefully tuned schemes
