@@ -35,35 +35,31 @@ If the user has already stated a clear mood or style keyword, skip directly to S
 If not clear enough, ask proactively:
 
 > What "feel" do you want this palette to convey?
-> For example: natural, trendy, sophisticated, American, Japanese, Nordic, retro, tech-forward, Taiwanese local?
+> For example: calm, bold, romantic, luxurious, earthy, playful, professional, dramatic, cozy, minimal, or Japanese?
 > You can also describe something more specific, like "a coffee shop on a rainy day", "sunset by the sea", or "Tokyo street vibes".
 
-### Step 2 — Match the Style and Load the Corresponding Reference File
+### Step 2 — Match the Mood and Load the Corresponding Reference File
 
-Based on the user's described feel, match it to the most fitting **style category** and load the corresponding reference file:
+Based on the user's described feel, match it to the most fitting **mood category** and load the corresponding reference file:
 
-| Style Category | Trigger Keywords (Chinese) | English Equivalents | Reference File |
-|----------------|---------------------------|---------------------|----------------|
-| 🌿 Nature | 森林、海洋、大地、植物、有機、田園、花園 | forest, ocean, earth, botanical, organic, pastoral, garden | `references/nature.md` |
-| 🔥 Trendy | 潮流、社群、Z世代、IG風、大膽、街頭、時尚 | trendy, social media, Gen Z, IG-style, bold, street, fashion | `references/trendy.md` |
-| 🎩 Mature | 沉穩、優雅、高端、奢華、精品、紳士、商務 | composed, elegant, premium, luxury, refined, gentleman, business | `references/mature.md` |
-| 🦅 American | 美國、牛仔、運動、公路、校園、工業 | American, cowboy, sporty, highway, campus, industrial | `references/american.md` |
-| 🎌 Japanese | 和風、侘寂、禪、可愛、動漫、抹茶、無印 | Japanese, wabi-sabi, zen, kawaii, anime, matcha, muji | `references/japanese.md` |
-| 🏔️ Nordic | 斯堪地納維亞、極簡、Hygge、IKEA、白淨 | Scandinavian, minimalist, hygge, IKEA, clean white | `references/nordic.md` |
-| 📻 Retro | 懷舊、70s、80s、90s、老派、膠卷、像素 | nostalgic, 70s, 80s, 90s, old-school, film, pixel | `references/retro.md` |
-| 💻 Tech | 未來、AI、區塊鏈、賽博龐克、程式、新創 | futuristic, AI, blockchain, cyberpunk, coding, startup | `references/tech.md` |
-| 🏮 Taiwanese | 廟宇、夜市、茶文化、文青、老街、鐵皮屋 | temple, night market, tea culture, literary, old street, tin-roof house | `references/taiwanese.md` |
-| 🇰🇷 Korean | K-beauty、韓劇、韓服、首爾、咖啡廳 | K-beauty, K-drama, hanbok, Seoul, café culture | `references/korean.md` |
-| 🏛️ Mediterranean | 聖托里尼、托斯卡尼、西班牙磁磚、蔚藍海岸 | Santorini, Tuscany, Spanish tile, Côte d'Azur | `references/mediterranean.md` |
-| 🎨 Art Deco | 1920s、蓋茨比、幾何裝飾、金與黑、爵士時代 | 1920s, Gatsby, geometric, gold & black, Jazz Age | `references/artdeco.md` |
-| 🪑 Mid-Century Modern | 50-60年代、Eames、原子時代、丹麥設計 | 1950s-60s, Eames, atomic age, Danish design | `references/midcentury.md` |
-| 🇫🇷 French | 巴黎、浪漫、甜點色、薰衣草、小酒館 | Parisian, romantic, pâtisserie, lavender, bistro | `references/french.md` |
-| 🌍 African | 部落、肯特布、草原、安卡拉印花、大地色 | tribal, kente, savanna, ankara print, earth tones | `references/african.md` |
+| Mood Category | Trigger Keywords (Chinese) | English Equivalents | Reference File |
+|---------------|---------------------------|---------------------|----------------|
+| 🌊 Calm | 寧靜、冥想、療癒、SPA、放鬆、安靜、平和 | calm, serene, meditation, healing, spa, relax, peaceful | `references/calm.md` |
+| ⚡ Bold | 活力、大膽、能量、運動、衝擊、自信、熱情 | bold, energetic, dynamic, sports, impact, confident, passionate | `references/bold.md` |
+| 🎀 Romantic | 浪漫、柔和、溫柔、夢幻、甜美、粉嫩、婚禮 | romantic, soft, tender, dreamy, sweet, pastel, wedding | `references/romantic.md` |
+| 👑 Luxurious | 奢華、高端、精品、優雅、尊貴、沉穩、頂級 | luxurious, premium, refined, opulent, elegant, exclusive | `references/luxurious.md` |
+| 🌿 Earthy | 自然、大地、有機、森林、田園、泥土、植物 | natural, earthy, organic, forest, pastoral, botanical | `references/earthy.md` |
+| 🎮 Playful | 繽紛、歡樂、活潑、創意、童趣、彩色、派對 | playful, fun, joyful, creative, whimsical, colorful, party | `references/playful.md` |
+| 🏢 Professional | 專業、企業、商務、信任、可靠、銀行、科技 | professional, corporate, business, trustworthy, reliable | `references/professional.md` |
+| 🔮 Dramatic | 戲劇、暗黑、叛逆、電影感、賽博龐克、電競 | dramatic, dark, edgy, cinematic, cyberpunk, gaming | `references/dramatic.md` |
+| ☕ Cozy | 溫馨、溫暖、家的感覺、秋天、壁爐、咖啡廳 | cozy, warm, homey, autumnal, fireplace, café | `references/cozy.md` |
+| ⬜ Minimal | 極簡、現代、乾淨、無印、簡約、留白、純粹 | minimal, modern, clean, muji, simple, whitespace, pure | `references/minimal.md` |
+| 🎌 Japanese | 和風、侘寂、禪、可愛、動漫、抹茶、浮世繪 | Japanese, wabi-sabi, zen, kawaii, anime, matcha, ukiyo-e | `references/japanese.md` |
 
 **Rules:**
-- Multiple style files can be loaded at once (e.g. user says "Japanese literary" → load japanese.md + the literary section from taiwanese.md)
+- Multiple mood files can be loaded at once (e.g. user says "cozy but minimal" → load cozy.md + minimal.md)
 - **Always also load** `references/color-theory.md` as the theoretical foundation
-- If the user's description spans multiple styles, prioritize loading the 1–2 closest files
+- If the user's description spans multiple moods, prioritize loading the 1–2 closest files
 
 ### Step 3 — Find Matching Palettes from the Reference Files
 
@@ -156,20 +152,20 @@ If the user has an existing deliverable (presentation, UI, document), proactivel
 
 ---
 
-## Cross-Style Mixing
+## Cross-Mood Mixing
 
-When the user's needs span multiple styles:
+When the user's needs span multiple moods:
 
-1. Pick the three-color foundation from the primary style file
-2. Fine-tune saturation or lightness using the secondary style file
+1. Pick the three-color foundation from the primary mood file
+2. Fine-tune saturation or lightness using the secondary mood file
 3. Explain the mixing logic in the "Why This Palette?" section
 
-Example: "Nordic feel but with a touch of Taiwanese literary" → take the color structure from nordic.md, but swap the accent color for the kiln-fired orange from taiwanese.md TWN-04.
+Example: "cozy but minimal" → take the warm tones from cozy.md COZ-02, but reduce saturation toward minimal.md MIN-03's restraint.
 
 ---
 
 ## Number of Palette Suggestions
 
-- By default, provide **2–3 palettes**, drawn from different palettes within the same style file
+- By default, provide **2–3 palettes**, drawn from different palettes within the same mood file
 - If the user's needs are very specific, a single best-fit palette is acceptable
-- Every palette must include source attribution (which style file and which palette ID, or Custom Palette)
+- Every palette must include source attribution (which mood file and which palette ID, or Custom Palette)

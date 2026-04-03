@@ -1,21 +1,22 @@
-# 🎌 Japanese Style
+# 🎌 Japanese — 和風
 
-**Keywords:** Wafuu (和風), Wabi-sabi (侘寂), Zen (禅), Minimalism, Kawaii (可愛), Anime, Ukiyo-e (浮世繪), Sakura (櫻花), Matcha (抹茶), Muji (無印)
-**Color Characteristics:** Muted low-saturation (wabi-sabi school), pastel high-lightness (kawaii school), bold ukiyo-e contrasts (traditional school), kusumi-iro (くすみ色) as the dominant tone
+**Mood:** Wabi-sabi imperfection, zen stillness, kawaii sweetness, ukiyo-e boldness, seasonal sensitivity
+**Trigger Keywords:** 日本、和風、侘寂、禪、可愛、動漫、抹茶、無印、浮世繪、櫻花 / Japanese, wabi-sabi, zen, kawaii, anime, matcha, muji, ukiyo-e, sakura
+**Color Characteristics:** Two poles — muted/desaturated (wabi-sabi, muji) and vivid/high-contrast (ukiyo-e, anime). Strong seasonal consciousness (spring pink, summer blue, autumn red, winter white)
 
 ---
 
-## JPN-01 — Wabi-sabi Beauty (Analogous)
+## JPN-01 — Wabi-sabi (Analogous)
 
 | Role | Hex | HSL | Color Name |
 |------|-----|-----|------------|
-| Primary 60% | #B5ADA2 | 32° 9% 67% | Wabi-sabi Sand / 砂壁色 |
-| Secondary 30% | #8A8075 | 28° 9% 50% | Grey Tea / 灰茶 |
-| Accent 10% | #5A5047 | 30° 11% 31% | Scorched Brown / 焦茶 |
+| Primary 60% | #B5ADA2 | 34° 10% 67% | Kinari / きなり・生成り |
+| Secondary 30% | #8A8075 | 30° 8% 50% | Kitsune / 狐色 |
+| Accent 10% | #5A5047 | 28° 10% 31% | Kuri / 栗色 |
 
 **Extended:** Background #F6F4F0 · Surface #ECE8E2 · Text #2D2924 · Border #CBC5BB
-**Structure:** Analogous — 28°–32° warm grey band, extremely low saturation embodying the patina of time
-**Atmosphere:** The earthen walls of a Kyoto machiya, the restrained beauty of Sen no Rikyu's tea room
+**Structure:** Analogous — 28°–34° warm-gray band, beauty in imperfection and age
+**Atmosphere:** A cracked Kintsugi bowl on a weathered wooden tray, autumn light through paper screens
 
 ---
 
@@ -23,13 +24,13 @@
 
 | Role | Hex | HSL | Color Name |
 |------|-----|-----|------------|
-| Primary 60% | #F2D5DB | 345° 50% 89% | Pale Cherry / 薄櫻 |
-| Secondary 30% | #C8A0AB | 342° 24% 71% | Grey Cherry / 灰櫻 |
-| Accent 10% | #7A5565 | 338° 18% 40% | Antique Purple / 古代紫 |
+| Primary 60% | #F2D5DB | 342° 50% 89% | Sakura / 桜色 |
+| Secondary 30% | #C8A0AB | 340° 25% 71% | Momo / 桃色 |
+| Accent 10% | #7A5565 | 335° 18% 40% | Enji / 臙脂 |
 
 **Extended:** Background #FDF7F8 · Surface #F8EFF1 · Text #382028 · Border #E0C8CE
-**Structure:** Analogous — 338°–345° pink band, lightness gradient expressing the depth of petals
-**Atmosphere:** Cherry blossom petals landing on the water at Meguro River, a faint pink haze drifting in the spring breeze
+**Structure:** Analogous — 335°–342° cherry blossom pink band, spring's fleeting beauty
+**Atmosphere:** Walking under a canopy of sakura in full bloom, petals drifting onto a quiet canal
 
 ---
 
@@ -37,13 +38,13 @@
 
 | Role | Hex | HSL | Color Name |
 |------|-----|-----|------------|
-| Primary 60% | #7C9A62 | 96° 23% 49% | Matcha / 抹茶 |
-| Secondary 30% | #E5D8C2 | 36° 36% 83% | Rice Cracker / 米菓 |
-| Accent 10% | #B85C5C | 0° 35% 54% | Red Bean / 紅豆 |
+| Primary 60% | #7C9A62 | 96° 22% 49% | Matcha / 抹茶色 |
+| Secondary 30% | #E5D8C2 | 34° 34% 83% | Kinako / きな粉色 |
+| Accent 10% | #B85C5C | 0° 34% 54% | Azuki / 小豆色 |
 
 **Extended:** Background #F8F9F3 · Surface #EFF2E7 · Text #1E2A15 · Border #C0D0A8
-**Structure:** Split-Complementary — 96° / 36° / 0°, desaturated to evoke the gentle warmth of wagashi
-**Atmosphere:** Ichigo-ichie in the tea room — the bitterness of matcha paired with the sweetness of red bean
+**Structure:** Split-Complementary — 96° matcha + 34° kinako + 0° azuki, a traditional tea ceremony
+**Atmosphere:** Whisking matcha in a chawan, a delicate wagashi beside it, the scent of tatami
 
 ---
 
@@ -51,24 +52,24 @@
 
 | Role | Hex | HSL | Color Name |
 |------|-----|-----|------------|
-| Primary 60% | #2C5A7C | 205° 48% 33% | Indigo Fold / 藍摺 |
-| Secondary 30% | #BA5B4C | 8° 42% 51% | Vermilion Red / 朱紅 |
-| Accent 10% | #D4B85A | 48° 58% 59% | Golden Tea / 金茶 |
+| Primary 60% | #2C5A7C | 204° 47% 33% | Ai / 藍色 |
+| Secondary 30% | #BA5B4C | 8° 40% 51% | Beni / 紅色 |
+| Accent 10% | #D4B85A | 48° 54% 59% | Kinsui / 金翠 |
 
 **Extended:** Background #F2F4F6 · Surface #E0E6EC · Text #0E1820 · Border #A0B0C0
-**Structure:** Modified Triadic — 205° / 8° / 48°, saturation controlled at 40–60% to evoke the depth of woodblock printing
-**Atmosphere:** Hiroshige's "Fifty-three Stations of the Tokaido" — the classic Japanese pairing of indigo and vermilion
+**Structure:** Modified Triadic — 204° / 8° / 48°, the bold indigo-red-gold of woodblock prints
+**Atmosphere:** Hokusai's Great Wave — deep indigo sea, white foam, a golden sky behind Fuji
 
 ---
 
-## JPN-05 — Muji Minimalism (Analogous)
+## JPN-05 — Anime Neon (Cool-Warm Contrast)
 
 | Role | Hex | HSL | Color Name |
 |------|-----|-----|------------|
-| Primary 60% | #F2ECE2 | 34° 34% 92% | Raw White / 生成色 |
-| Secondary 30% | #C0B2A0 | 32° 18% 69% | Linen / 亞麻 |
-| Accent 10% | #887A68 | 30° 15% 47% | Walnut / 胡桃 |
+| Primary 60% | #0E1028 | 232° 48% 11% | Yoru / 夜色 |
+| Secondary 30% | #4888E0 | 218° 70% 58% | Sora / 空色 |
+| Accent 10% | #E85080 | 342° 76% 61% | Neon Sakura / ネオン桜 |
 
-**Extended:** Background #FAF8F4 · Surface #F2EDE5 · Text #282218 · Border #D6CFC2
-**Structure:** Analogous — 30°–34° warm neutral band, extremely restrained saturation
-**Atmosphere:** The plain-colored shelves of Muji — the material itself is the finest design
+**Extended:** Background #0A0C1E · Surface #141830 · Text #D0D8F0 · Border #202848
+**Structure:** Cool-Warm Contrast — midnight base + electric sky blue + neon pink accent
+**Atmosphere:** Akihabara at night, anime billboards glowing, the electric pulse of Tokyo's otaku culture
