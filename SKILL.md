@@ -53,6 +53,12 @@ Based on the user's described feel, match it to the most fitting **style categor
 | 📻 Retro | 懷舊、70s、80s、90s、老派、膠卷、像素 | nostalgic, 70s, 80s, 90s, old-school, film, pixel | `references/retro.md` |
 | 💻 Tech | 未來、AI、區塊鏈、賽博龐克、程式、新創 | futuristic, AI, blockchain, cyberpunk, coding, startup | `references/tech.md` |
 | 🏮 Taiwanese | 廟宇、夜市、茶文化、文青、老街、鐵皮屋 | temple, night market, tea culture, literary, old street, tin-roof house | `references/taiwanese.md` |
+| 🇰🇷 Korean | K-beauty、韓劇、韓服、首爾、咖啡廳 | K-beauty, K-drama, hanbok, Seoul, café culture | `references/korean.md` |
+| 🏛️ Mediterranean | 聖托里尼、托斯卡尼、西班牙磁磚、蔚藍海岸 | Santorini, Tuscany, Spanish tile, Côte d'Azur | `references/mediterranean.md` |
+| 🎨 Art Deco | 1920s、蓋茨比、幾何裝飾、金與黑、爵士時代 | 1920s, Gatsby, geometric, gold & black, Jazz Age | `references/artdeco.md` |
+| 🪑 Mid-Century Modern | 50-60年代、Eames、原子時代、丹麥設計 | 1950s-60s, Eames, atomic age, Danish design | `references/midcentury.md` |
+| 🇫🇷 French | 巴黎、浪漫、甜點色、薰衣草、小酒館 | Parisian, romantic, pâtisserie, lavender, bistro | `references/french.md` |
+| 🌍 African | 部落、肯特布、草原、安卡拉印花、大地色 | tribal, kente, savanna, ankara print, earth tones | `references/african.md` |
 
 **Rules:**
 - Multiple style files can be loaded at once (e.g. user says "Japanese literary" → load japanese.md + the literary section from taiwanese.md)

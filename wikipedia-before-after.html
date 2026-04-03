@@ -117,6 +117,60 @@
     --tab-active-border: #E07040; --notice-bg: #282838; --notice-border: #40B878; --category-bg: #1E1E2A;
   }
 
+  /* KOR-02 Hanbok Elegance */
+  .theme-hanbok {
+    --primary: #6B4C8A; --secondary: #D4A458; --accent: #C85060;
+    --bg: #F8F5FA; --surface: #EDE8F2; --text: #1E1428; --border: #C8BCD4;
+    --link: #6B4C8A; --link-visited: #C85060;
+    --toc-bg: #EDE8F2; --infobox-bg: #EDE8F2; --infobox-header: #6B4C8A;
+    --tab-active-border: #D4A458; --notice-bg: #EDE8F2; --notice-border: #D4A458; --category-bg: #EDE8F2;
+  }
+
+  /* MED-01 Santorini Blue */
+  .theme-santorini {
+    --primary: #2868A8; --secondary: #F0F4F8; --accent: #D86830;
+    --bg: #FAFCFE; --surface: #EFF4FA; --text: #14283C; --border: #B8CDE0;
+    --link: #2868A8; --link-visited: #1E4878;
+    --toc-bg: #EFF4FA; --infobox-bg: #EFF4FA; --infobox-header: #2868A8;
+    --tab-active-border: #D86830; --notice-bg: #EFF4FA; --notice-border: #B8CDE0; --category-bg: #EFF4FA;
+  }
+
+  /* ART-01 Gatsby Gold */
+  .theme-gatsby {
+    --primary: #1A1A2E; --secondary: #D4A838; --accent: #F0E8D0;
+    --bg: #0E0E1A; --surface: #1A1A2E; --text: #E8E0C8; --border: #2A2A44;
+    --link: #D4A838; --link-visited: #B89030;
+    --toc-bg: #1A1A2E; --infobox-bg: #1A1A2E; --infobox-header: #2A2A44;
+    --tab-active-border: #D4A838; --notice-bg: #22223A; --notice-border: #D4A838; --category-bg: #1A1A2E;
+  }
+
+  /* MCM-04 Palm Springs Pool */
+  .theme-palmsprings {
+    --primary: #38A8B8; --secondary: #F0E0C0; --accent: #E87858;
+    --bg: #F4F9FA; --surface: #E8F2F4; --text: #102830; --border: #A8D0D8;
+    --link: #38A8B8; --link-visited: #E87858;
+    --toc-bg: #E8F2F4; --infobox-bg: #E8F2F4; --infobox-header: #38A8B8;
+    --tab-active-border: #E87858; --notice-bg: #E8F2F4; --notice-border: #A8D0D8; --category-bg: #E8F2F4;
+  }
+
+  /* FRN-05 Bistro Noir */
+  .theme-bistro {
+    --primary: #2A2A2A; --secondary: #C8A878; --accent: #A83838;
+    --bg: #1A1A1A; --surface: #2A2A2A; --text: #F0E8DA; --border: #484040;
+    --link: #C8A878; --link-visited: #A83838;
+    --toc-bg: #2A2A2A; --infobox-bg: #2A2A2A; --infobox-header: #383030;
+    --tab-active-border: #A83838; --notice-bg: #323232; --notice-border: #C8A878; --category-bg: #2A2A2A;
+  }
+
+  /* AFR-01 Kente Weave */
+  .theme-kente {
+    --primary: #D8A020; --secondary: #1E8848; --accent: #C83028;
+    --bg: #FBF8F0; --surface: #F4ECDA; --text: #1E1408; --border: #D8C890;
+    --link: #1E8848; --link-visited: #C83028;
+    --toc-bg: #F4ECDA; --infobox-bg: #F4ECDA; --infobox-header: #D8A020;
+    --tab-active-border: #1E8848; --notice-bg: #F4ECDA; --notice-border: #D8A020; --category-bg: #F4ECDA;
+  }
+
   /* ==========================================
      Base Reset
      ========================================== */
@@ -498,7 +552,7 @@
 <div class="theme-panel" id="themePanel">
   <div class="panel-header">
     <h2>hue3 &times; Wikipedia</h2>
-    <p>Click a palette or press &uarr;&darr; to switch. 10 styles from 45 curated palettes.</p>
+    <p>Click a palette or press &uarr;&darr; to switch. 16 styles from 75 curated palettes.</p>
   </div>
   <div class="panel-list" id="themeList">
 
@@ -632,6 +686,78 @@
       <div class="theme-label">
         Graffiti / 塗鴉
         <span class="theme-sub">TRD-04 &middot; Warm-Cool</span>
+      </div>
+    </button>
+
+    <button class="theme-item" data-theme="theme-hanbok" data-index="11">
+      <div class="theme-dots">
+        <span style="background:#6B4C8A"></span>
+        <span style="background:#D4A458"></span>
+        <span style="background:#C85060"></span>
+      </div>
+      <div class="theme-label">
+        Hanbok / 韓服
+        <span class="theme-sub">KOR-02 &middot; Modified Triadic</span>
+      </div>
+    </button>
+
+    <button class="theme-item" data-theme="theme-santorini" data-index="12">
+      <div class="theme-dots">
+        <span style="background:#2868A8"></span>
+        <span style="background:#F0F4F8"></span>
+        <span style="background:#D86830"></span>
+      </div>
+      <div class="theme-label">
+        Santorini / 聖托里尼
+        <span class="theme-sub">MED-01 &middot; Complementary</span>
+      </div>
+    </button>
+
+    <button class="theme-item" data-theme="theme-gatsby" data-index="13">
+      <div class="theme-dots">
+        <span style="background:#1A1A2E"></span>
+        <span style="background:#D4A838"></span>
+        <span style="background:#F0E8D0"></span>
+      </div>
+      <div class="theme-label">
+        Gatsby / 蓋茨比
+        <span class="theme-sub">ART-01 &middot; Complementary</span>
+      </div>
+    </button>
+
+    <button class="theme-item" data-theme="theme-palmsprings" data-index="14">
+      <div class="theme-dots">
+        <span style="background:#38A8B8"></span>
+        <span style="background:#F0E0C0"></span>
+        <span style="background:#E87858"></span>
+      </div>
+      <div class="theme-label">
+        Palm Springs / 棕櫚泉
+        <span class="theme-sub">MCM-04 &middot; Split-Comp.</span>
+      </div>
+    </button>
+
+    <button class="theme-item" data-theme="theme-bistro" data-index="15">
+      <div class="theme-dots">
+        <span style="background:#2A2A2A"></span>
+        <span style="background:#C8A878"></span>
+        <span style="background:#A83838"></span>
+      </div>
+      <div class="theme-label">
+        Bistro / 小酒館
+        <span class="theme-sub">FRN-05 &middot; Warm-Cool</span>
+      </div>
+    </button>
+
+    <button class="theme-item" data-theme="theme-kente" data-index="16">
+      <div class="theme-dots">
+        <span style="background:#D8A020"></span>
+        <span style="background:#1E8848"></span>
+        <span style="background:#C83028"></span>
+      </div>
+      <div class="theme-label">
+        Kente / 肯特布
+        <span class="theme-sub">AFR-01 &middot; Triadic</span>
       </div>
     </button>
 
