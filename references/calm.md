@@ -73,3 +73,45 @@
 **Extended:** Background #F6F8FA · Surface #ECF0F4 · Text #1A2230 · Border #C4CED8
 **Structure:** Monochromatic — 206°–212° single blue-gray hue, lightness variation only
 **Atmosphere:** Fresh snowfall muffling all sound, the world reduced to whispers of blue and white
+
+---
+
+## CLM-06 — Zen Garden (Modified Triadic)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #C8D4C4 | 108° 10% 80% | Pale Sage / 淡鼠尾草 |
+| Secondary 30% | #B8C0D0 | 222° 14% 77% | Slate Mist / 霧灰藍 |
+| Accent 10% | #D0C4B4 | 30° 16% 76% | Pebble / 卵石色 |
+
+**Extended:** Background #F6F8F6 · Surface #EDF0EC · Text #1E2820 · Border #C0CCC0
+**Structure:** Modified Triadic — 108° / 222° / 30°, offset ≈110°/168° from equidistant; three muted hues converging toward gray (§3.2)
+**Atmosphere:** A raked gravel zen garden, three mossy stones, no sound but wind through bamboo
+
+---
+
+## CLM-07 — Herbal Tea (Warm Analogous)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #D8D0C0 | 40° 18% 80% | Chamomile / 洋甘菊 |
+| Secondary 30% | #C8C0A8 | 42° 17% 72% | Dried Herb / 乾燥香草 |
+| Accent 10% | #A89880 | 32° 16% 58% | Warm Clay / 暖陶色 |
+
+**Extended:** Background #FAF8F4 · Surface #F2EEE6 · Text #201C14 · Border #D4CCC0
+**Structure:** Warm Analogous — 32°–42° narrow warm band, all S<20% to stay within calm's low-saturation spec (§3.4 analogous + §5.1 low saturation tier)
+**Atmosphere:** Sipping herbal tea in a sunlit room, steam curling upward, unhurried afternoon silence
+
+---
+
+## CLM-08 — Tide Pool (Triadic)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #A8C8C8 | 180° 16% 72% | Tide Pool / 潮池青 |
+| Secondary 30% | #C8B8C8 | 300° 10% 75% | Sea Urchin / 海膽紫灰 |
+| Accent 10% | #C8C8A8 | 60° 16% 72% | Kelp Sand / 海帶砂 |
+
+**Extended:** Background #F5F8F8 · Surface #ECF0F0 · Text #1A2424 · Border #B8CCCC
+**Structure:** Triadic — 180° / 300° / 60°, equidistant 120° spacing per §3.1, all desaturated (S≤16%) to maintain calm's peaceful register
+**Atmosphere:** A shallow tide pool at low tide, soft colors beneath still water, small creatures drifting

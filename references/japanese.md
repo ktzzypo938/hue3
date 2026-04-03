@@ -73,3 +73,45 @@
 **Extended:** Background #0A0C1E · Surface #141830 · Text #D0D8F0 · Border #202848
 **Structure:** Cool-Warm Contrast — midnight base + electric sky blue + neon pink accent
 **Atmosphere:** Akihabara at night, anime billboards glowing, the electric pulse of Tokyo's otaku culture
+
+---
+
+## JPN-06 — Momiji (Modified Triadic)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #B84828 | 12° 63% 44% | Momiji / 紅葉 |
+| Secondary 30% | #D4A848 | 40° 56% 56% | Kinshu / 金秋 |
+| Accent 10% | #486838 | 104° 28% 31% | Matsu / 松葉色 |
+
+**Extended:** Background #FAF4F0 · Surface #F2E8DE · Text #1E1008 · Border #D4B89C
+**Structure:** Modified Triadic — 12° / 40° / 104°, intervals 28°/64°/268° (§3.2 modified), S 28–63% reflecting the vibrant-yet-grounded palette of Japanese autumn foliage
+**Atmosphere:** Kyoto in November, fiery momiji reflecting in a temple pond, golden ginkgo leaves falling
+
+---
+
+## JPN-07 — Torii (Complementary)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #C03020 | 4° 68% 44% | Torii Red / 鳥居朱 |
+| Secondary 30% | #F0E8D8 | 36° 38% 89% | Shimenawa / 注連縄白 |
+| Accent 10% | #384030 | 132° 14% 22% | Sugi / 杉色 |
+
+**Extended:** Background #FAF6F0 · Surface #F4ECE0 · Text #1A0808 · Border #D8C0A8
+**Structure:** Complementary — 4° red + 132° green (128° apart, near-complementary per §3.3 split-comp logic), plus 36° warm white as the vast-area surface color per §4 60-30-10
+**Atmosphere:** A vermillion torii gate framing a cedar forest, shimenawa rope fluttering in the breeze
+
+---
+
+## JPN-08 — Shibori (Analogous)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #2A4878 | 218° 48% 32% | Shibori Indigo / 絞り藍 |
+| Secondary 30% | #4868A0 | 220° 36% 45% | Ai-nezumi / 藍鼠 |
+| Accent 10% | #88A8D0 | 216° 38% 67% | Hanada / 縹色 |
+
+**Extended:** Background #F0F2F6 · Surface #E0E6EE · Text #0E1420 · Border #A0B0C8
+**Structure:** Analogous — 216°–220° tight indigo band per §3.4, three lightness levels (L32%/45%/67%) following §5.2 five-level scale, capturing the gradient of shibori dye from deep to pale
+**Atmosphere:** Shibori cloth drying in the sun, indigo in three depths, the ancient art of resist-dyeing

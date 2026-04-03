@@ -73,3 +73,45 @@
 **Extended:** Background #1E1614 · Surface #2C2220 · Text #F0E0D0 · Border #483830
 **Structure:** Split-Complementary — dark wood base + warm candle gold + wine red
 **Atmosphere:** An intimate dinner at a candlelit table, wine glasses glowing, warm laughter filling the room
+
+---
+
+## COZ-06 — Spice Market (Modified Triadic)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #B07840 | 26° 47% 47% | Cinnamon / 肉桂 |
+| Secondary 30% | #7A6848 | 32° 26% 38% | Nutmeg / 肉豆蔻 |
+| Accent 10% | #C04828 | 10° 64% 46% | Paprika / 紅椒粉 |
+
+**Extended:** Background #F8F2EA · Surface #F0E4D4 · Text #201408 · Border #D0B898
+**Structure:** Modified Triadic — 26° / 32° / 10°, tight warm cluster (§3.2 modified triadic with ±12° variance), medium S 26–64% ascending from secondary to accent per §5.1
+**Atmosphere:** A Middle Eastern spice bazaar, copper bowls of cinnamon, nutmeg, and paprika, warm lantern light
+
+---
+
+## COZ-07 — Quilted Blanket (Triadic)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #C8A880 | 32° 34% 64% | Patchwork Tan / 拼布棕 |
+| Secondary 30% | #808868 | 72° 14% 47% | Sage Stitch / 鼠尾草縫線 |
+| Accent 10% | #A87080 | 340° 22% 55% | Berry Thread / 莓果線 |
+
+**Extended:** Background #FAF6F0 · Surface #F0E8DA · Text #1E1A10 · Border #D4C4A8
+**Structure:** Triadic — 32° / 72° / 340°, intervals 40°/268°/52° (compressed triadic per §3.2), all S<35% for cozy's low-contrast warmth
+**Atmosphere:** Wrapped in a handmade quilt, patches of tan, sage, and berry, every stitch a memory
+
+---
+
+## COZ-08 — Maple Syrup (Analogous)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #D0A058 | 36° 52% 58% | Maple Syrup / 楓糖漿 |
+| Secondary 30% | #B88840 | 34° 48% 49% | Amber Honey / 琥珀蜜 |
+| Accent 10% | #986830 | 28° 52% 39% | Dark Caramel / 深焦糖 |
+
+**Extended:** Background #FAF4EA · Surface #F2E8D4 · Text #1E1608 · Border #D8C498
+**Structure:** Analogous — 28°–36° tight warm band per §3.4, ascending saturation (48–52%) and descending lightness (58%→39%) per §5.2 creating depth within a single tonal family
+**Atmosphere:** Sunday morning pancakes, maple syrup pooling in golden rivulets, butter melting slowly

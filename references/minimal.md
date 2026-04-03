@@ -73,3 +73,45 @@
 **Extended:** Background #F4F4F2 · Surface #ECECEA · Text #1E1E1C · Border #CCCCC8
 **Structure:** Cool-Warm Contrast — green-gray undertone, barely perceptible warmth
 **Atmosphere:** A foggy morning, everything softened to silhouettes, the world pared to its essence
+
+---
+
+## MIN-06 — One Blue Line (Neutral + Accent)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #F4F4F4 | 0° 0% 96% | White / 純白 |
+| Secondary 30% | #909090 | 0° 0% 56% | Gray / 中灰 |
+| Accent 10% | #2868B0 | 214° 62% 42% | Blue Line / 藍線 |
+
+**Extended:** Background #FAFAFA · Surface #EEEEEE · Text #1A1A1A · Border #CCCCCC
+**Structure:** Neutral + Accent — pure achromatic base (S=0%) + single saturated blue (S62%), same principle as MIN-04 but cool accent per §5.1 high-saturation tier for focal power
+**Atmosphere:** A Dieter Rams product — white body, gray controls, one perfect blue indicator light
+
+---
+
+## MIN-07 — Tatami (Warm Analogous)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #EDE8D8 | 40° 24% 89% | Tatami / 畳色 |
+| Secondary 30% | #D4CAB4 | 36° 19% 77% | Rice Paper / 和紙色 |
+| Accent 10% | #B0A48C | 36° 14% 62% | Bamboo / 竹色 |
+
+**Extended:** Background #F8F6F0 · Surface #F0ECE2 · Text #1C1A14 · Border #D0C8B8
+**Structure:** Warm Analogous — 36°–40° tight band per §3.4, S 14–24% well within minimal's near-neutral spec, three lightness levels (89%/77%/62%) per §5.2
+**Atmosphere:** A traditional Japanese room, tatami floor, rice paper screens, one bamboo vase — nothing superfluous
+
+---
+
+## MIN-08 — Swiss Grid (Split-Complementary)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #F0F0F0 | 0° 0% 94% | Grid White / 格柵白 |
+| Secondary 30% | #2A2A2A | 0° 0% 16% | Swiss Black / 瑞士黑 |
+| Accent 10% | #E03020 | 4° 76% 50% | Helvetica Red / 瑞士紅 |
+
+**Extended:** Background #F8F8F8 · Surface #ECECEC · Text #1A1A1A · Border #D0D0D0
+**Structure:** Split-Complementary — achromatic white/black pair (maximum L contrast per §6.3) + high-S red (4°, S76%) as the sole chromatic element; Swiss Style/International Typographic design principle
+**Atmosphere:** A 1960s Swiss poster — Helvetica type, black grid, one red circle, absolute precision

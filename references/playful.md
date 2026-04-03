@@ -73,3 +73,45 @@
 **Extended:** Background #E0EED4 · Surface #C8DEB0 · Text #102010 · Border #88B860
 **Structure:** Cool-Warm Contrast — retro game console green palette with warm gold highlights
 **Atmosphere:** A retro 8-bit game world, coins collected, level-up sound effects ringing
+
+---
+
+## PLY-06 — Confetti (Modified Triadic)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #E868D0 | 310° 72% 66% | Confetti Pink / 彩紙粉 |
+| Secondary 30% | #58D898 | 150° 58% 60% | Party Green / 派對綠 |
+| Accent 10% | #D8B840 | 48° 64% 55% | Streamer Gold / 彩帶金 |
+
+**Extended:** Background #FFF5FC · Surface #F8E8F4 · Text #281028 · Border #E0B8D4
+**Structure:** Modified Triadic — 310° / 150° / 48°, intervals 160°/258° (offset from equidistant per §3.2), all S>58% for playful's high-saturation spec
+**Atmosphere:** A surprise birthday party, confetti cannons firing, streamers everywhere
+
+---
+
+## PLY-07 — Ice Cream Parlor (Warm Analogous)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #E88898 | 350° 68% 72% | Strawberry / 草莓冰淇淋 |
+| Secondary 30% | #F0B878 | 30° 78% 71% | Mango Sorbet / 芒果冰沙 |
+| Accent 10% | #F0D060 | 48° 82% 66% | Lemon Gelato / 檸檬冰淇淋 |
+
+**Extended:** Background #FFF8F5 · Surface #F8F0E8 · Text #281010 · Border #E8C8B8
+**Structure:** Warm Analogous — 350°–48° warm arc spanning ~60°, ascending through the warm spectrum per §3.4, all S>68% and L>66% for sugary brightness
+**Atmosphere:** A vintage ice cream parlor, three scoops in a waffle cone, sprinkles everywhere
+
+---
+
+## PLY-08 — Crayon Box (Complementary)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #3890D0 | 208° 58% 52% | Sky Crayon / 天藍蠟筆 |
+| Secondary 30% | #D09038 | 34° 58% 52% | Sun Crayon / 太陽蠟筆 |
+| Accent 10% | #D04848 | 0° 58% 55% | Heart Crayon / 愛心蠟筆 |
+
+**Extended:** Background #F0F6FA · Surface #E4EEF6 · Text #0E1828 · Border #A8C0D8
+**Structure:** Complementary — 208° blue + 34° orange (174° apart, near-complementary per §3.3), plus 0° red accent; S all at 58% for consistent crayon-like vibrancy
+**Atmosphere:** A child's art desk, crayons scattered, a drawing of the sun and ocean pinned to the fridge

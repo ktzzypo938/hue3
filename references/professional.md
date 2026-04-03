@@ -73,3 +73,45 @@
 **Extended:** Background #FAFAFE · Surface #F0EEF8 · Text #1A1640 · Border #D8D4E8
 **Structure:** Modified Triadic — 260° / 244° / 2°, clean white + bold brand + warm CTA
 **Atmosphere:** A Silicon Valley SaaS landing page, clean white base paired with a confident purple brand
+
+---
+
+## PRO-06 — Healthcare (Triadic)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #F0F6F8 | 200° 30% 96% | Clinical White / 醫療白 |
+| Secondary 30% | #2080A8 | 198° 68% 39% | Trust Teal / 信任青 |
+| Accent 10% | #30A068 | 152° 54% 41% | Vitality Green / 活力綠 |
+
+**Extended:** Background #F8FAFE · Surface #EDF2F6 · Text #0E1E28 · Border #C8D8E0
+**Structure:** Triadic — 200° / 198° / 152°, cool-tone cluster with the two blues near-identical and green offset 46°; derived from §3.1 triadic principles, S 30–68% per professional's medium range
+**Atmosphere:** A modern hospital lobby, clean surfaces, teal wayfinding signs, green accents signaling health
+
+---
+
+## PRO-07 — Fintech (Cool-Warm Contrast)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #0C1828 | 214° 52% 10% | Vault Navy / 金庫海軍藍 |
+| Secondary 30% | #1858A0 | 212° 72% 36% | Finance Blue / 金融藍 |
+| Accent 10% | #20C878 | 152° 72% 46% | Mint Green / 薄荷綠 |
+
+**Extended:** Background #080E18 · Surface #101E30 · Text #D0D8E8 · Border #1E3050
+**Structure:** Cool-Warm Contrast — deep navy (214°) + bright blue (212°) + warm-side teal (152°), 60° temperature shift per §3.5; dark base typical of fintech dashboards
+**Atmosphere:** A Bloomberg-style trading dashboard at 4am, numbers streaming, green for up
+
+---
+
+## PRO-08 — Consulting (Warm Analogous)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #F4F0EA | 36° 22% 93% | Bone / 象牙骨 |
+| Secondary 30% | #4A5060 | 220° 14% 33% | Charcoal Suit / 炭灰西裝 |
+| Accent 10% | #B08840 | 36° 48% 47% | McKinsey Gold / 麥肯錫金 |
+
+**Extended:** Background #FAFAF6 · Surface #F0ECE4 · Text #14161C · Border #D0C8BA
+**Structure:** Warm Analogous — 36° warm bone base + 220° cool charcoal (temperature anchor per §3.5) + 36° gold accent; the bone-and-gold share a hue while charcoal provides authority
+**Atmosphere:** A McKinsey slide deck, cream paper, charcoal text, gold accent lines — restrained authority

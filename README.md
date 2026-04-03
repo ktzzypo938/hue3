@@ -2,21 +2,21 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Claude Code Skill](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai/claude-code)
-[![Palettes](https://img.shields.io/badge/Palettes-60-ff6b6b)]()
-[![Moods](https://img.shields.io/badge/Moods-12-4ecdc4)]()
+[![Palettes](https://img.shields.io/badge/Palettes-88-ff6b6b)]()
+[![Moods](https://img.shields.io/badge/Moods-11-4ecdc4)]()
 
 > **Three colors. One system. Every mood.**
 
 A [Claude Code](https://claude.ai/claude-code) skill that generates beautiful, production-ready color palettes from just three colors using triadic color theory.
 
-**[Live Demo →](https://ktzzypo938.github.io/hue3/)** — Browse all 60 palettes with instant preview
+**[Live Demo →](https://ktzzypo938.github.io/hue3/)** — Browse all 88 palettes with instant preview
 **[Wikipedia Before & After →](https://ktzzypo938.github.io/hue3/wikipedia-before-after.html)** — See hue3 transform a familiar website
 
-![hue3 preview — 60 palettes across 12 moods](preview.png)
+![hue3 preview — 88 palettes across 11 moods](preview.png)
 
 ### Wikipedia Before & After
 
-Same page, different mood — 12 hue3 palettes applied to Wikipedia's layout:
+Same page, different mood — 13 hue3 palettes applied to Wikipedia's layout:
 
 | Before (Original) | After (Cyberpunk / DRM-01) |
 |:--:|:--:|
@@ -35,7 +35,7 @@ Most color tools give you a color wheel and leave you on your own. hue3 is diffe
 
 ## Features
 
-- **60 curated palettes** across 12 mood categories (11 moods + Japanese), each with 5 carefully tuned schemes
+- **88 curated palettes** across 11 mood categories (10 moods + Japanese), each with 8 carefully tuned schemes
 - **Mood-first workflow** — describe a feeling, get matching colors (not the other way around)
 - **Triadic color theory** — every palette built on proven three-color structures (triadic, split-complementary, analogous, temperature contrast)
 - **60-30-10 ratio** — primary, secondary, accent roles with proper area distribution
@@ -49,17 +49,17 @@ Most color tools give you a color wheel and leave you on your own. hue3 is diffe
 
 | Mood | Keywords | Palettes |
 |------|----------|----------|
-| 🌊 Calm | serene, meditation, spa, peaceful, healing | 5 |
-| ⚡ Bold | energetic, dynamic, sports, impact, confident | 5 |
-| 🎀 Romantic | soft, tender, dreamy, sweet, wedding, pastel | 5 |
-| 👑 Luxurious | premium, elegant, opulent, refined, exclusive | 5 |
-| 🌿 Earthy | natural, organic, forest, botanical, pastoral | 5 |
-| 🎮 Playful | fun, joyful, creative, whimsical, colorful | 5 |
-| 🏢 Professional | corporate, business, trustworthy, reliable | 5 |
-| 🔮 Dramatic | dark, edgy, cinematic, cyberpunk, gaming | 5 |
-| ☕ Cozy | warm, homey, autumnal, fireplace, café | 5 |
-| ⬜ Minimal | modern, clean, simple, whitespace, pure | 5 |
-| 🎌 Japanese | wabi-sabi, sakura, matcha, ukiyo-e, anime | 5 |
+| 🌊 Calm | serene, meditation, spa, peaceful, healing | 8 |
+| ⚡ Bold | energetic, dynamic, sports, impact, confident | 8 |
+| 🎀 Romantic | soft, tender, dreamy, sweet, wedding, pastel | 8 |
+| 👑 Luxurious | premium, elegant, opulent, refined, exclusive | 8 |
+| 🌿 Earthy | natural, organic, forest, botanical, pastoral | 8 |
+| 🎮 Playful | fun, joyful, creative, whimsical, colorful | 8 |
+| 🏢 Professional | corporate, business, trustworthy, reliable | 8 |
+| 🔮 Dramatic | dark, edgy, cinematic, cyberpunk, gaming | 8 |
+| ☕ Cozy | warm, homey, autumnal, fireplace, café | 8 |
+| ⬜ Minimal | modern, clean, simple, whitespace, pure | 8 |
+| 🎌 Japanese | wabi-sabi, sakura, matcha, ukiyo-e, anime | 8 |
 
 ## Quick Start
 
@@ -103,7 +103,7 @@ Each recommendation includes:
 
 ## Preview Gallery
 
-Open `preview-all.html` in your browser to browse all 60 palettes with a live UI preview. Use **↑↓ arrow keys** to quickly flip through palettes.
+Open `preview-all.html` in your browser to browse all 88 palettes with a live UI preview. Use **↑↓ arrow keys** to quickly flip through palettes.
 
 The skill also includes `references/preview-template.html` — a single-palette preview with:
 
@@ -122,7 +122,7 @@ hue3/
 ├── SKILL.md                          # Main skill definition
 ├── README.md                         # This file
 ├── LICENSE                           # MIT License
-├── preview-all.html                  # Interactive gallery (all 60 palettes)
+├── preview-all.html                  # Interactive gallery (all 88 palettes)
 ├── wikipedia-before-after.html       # Wikipedia reskin demo (12 moods)
 ├── index.html                        # GitHub Pages entry point
 ├── preview.png                       # Social preview image
@@ -131,17 +131,17 @@ hue3/
 └── references/
     ├── color-theory.md               # Theory: HSL, triadic structures, 60-30-10, WCAG
     ├── preview-template.html         # Single-palette HTML preview template
-    ├── calm.md                       # 🌊 5 calm/serene palettes
-    ├── bold.md                       # ⚡ 5 bold/energetic palettes
-    ├── romantic.md                   # 🎀 5 romantic/soft palettes
-    ├── luxurious.md                  # 👑 5 luxurious/sophisticated palettes
-    ├── earthy.md                     # 🌿 5 earthy/natural palettes
-    ├── playful.md                    # 🎮 5 playful/vibrant palettes
-    ├── professional.md               # 🏢 5 professional/trustworthy palettes
-    ├── dramatic.md                   # 🔮 5 dramatic/edgy palettes
-    ├── cozy.md                       # ☕ 5 cozy/warm palettes
-    ├── minimal.md                    # ⬜ 5 minimal/modern palettes
-    └── japanese.md                   # 🎌 5 Japanese palettes
+    ├── calm.md                       # 🌊 8 calm/serene palettes
+    ├── bold.md                       # ⚡ 8 bold/energetic palettes
+    ├── romantic.md                   # 🎀 8 romantic/soft palettes
+    ├── luxurious.md                  # 👑 8 luxurious/sophisticated palettes
+    ├── earthy.md                     # 🌿 8 earthy/natural palettes
+    ├── playful.md                    # 🎮 8 playful/vibrant palettes
+    ├── professional.md               # 🏢 8 professional/trustworthy palettes
+    ├── dramatic.md                   # 🔮 8 dramatic/edgy palettes
+    ├── cozy.md                       # ☕ 8 cozy/warm palettes
+    ├── minimal.md                    # ⬜ 8 minimal/modern palettes
+    └── japanese.md                   # 🎌 8 Japanese palettes
 ```
 
 ## Contributing

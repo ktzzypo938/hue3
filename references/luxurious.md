@@ -73,3 +73,45 @@
 **Extended:** Background #F8F6F2 · Surface #EDE8E2 · Text #1E1C18 · Border #C8C0B8
 **Structure:** Cool-Warm Contrast — monochromatic warm neutrals, luxury through restraint
 **Atmosphere:** A Celine runway show, models in cream and charcoal, the silence louder than applause
+
+---
+
+## LUX-06 — Amethyst Vault (Triadic)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #181028 | 258° 44% 11% | Amethyst Black / 紫晶黑 |
+| Secondary 30% | #684898 | 262° 34% 44% | Deep Amethyst / 深紫晶 |
+| Accent 10% | #D8B060 | 42° 56% 61% | Ingot Gold / 金錠 |
+
+**Extended:** Background #0E0A18 · Surface #181028 · Text #D8D0E8 · Border #282040
+**Structure:** Triadic — 258° / 262° purple cluster + 42° gold, exploiting the §3.1 triadic concept (purple-gold is offset ~180° — a compressed triadic where two vertices merge), low L per luxurious spec
+**Atmosphere:** A private vault room, amethyst gemstones gleaming under warm gold display lights
+
+---
+
+## LUX-07 — Onyx & Ivory (Warm-Cool Contrast)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #1A1818 | 0° 4% 10% | Onyx / 縞瑪瑙黑 |
+| Secondary 30% | #3A3434 | 0° 5% 21% | Dark Leather / 深皮革 |
+| Accent 10% | #F0E8D4 | 42° 42% 88% | Ivory / 象牙白 |
+
+**Extended:** Background #101010 · Surface #1E1C1C · Text #E8E0D4 · Border #3A3434
+**Structure:** Warm-Cool Contrast — near-neutral dark base (S<5%) + single warm light accent (42°), extreme lightness contrast (L10% vs L88%) per §3.5 temperature contrast
+**Atmosphere:** An Hermès boutique, onyx displays, ivory silk scarves folded with surgical precision
+
+---
+
+## LUX-08 — Cognac Library (Analogous)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #1E1410 | 20° 30% 9% | Library Dark / 書房黑棕 |
+| Secondary 30% | #6A4028 | 20° 44% 29% | Cognac / 干邑棕 |
+| Accent 10% | #B87838 | 28° 52% 47% | Burnished Gold / 鍛造金 |
+
+**Extended:** Background #141010 · Surface #221814 · Text #E8D8C8 · Border #3A2A1E
+**Structure:** Analogous — 20°–28° narrow warm band, ascending lightness (L9%→29%→47%) per §3.4, saturation climbs from dark to accent per §5.1 three-level system
+**Atmosphere:** A mahogany-paneled library, cognac in a crystal snifter, the warm glow of a banker's lamp

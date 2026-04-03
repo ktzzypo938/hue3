@@ -73,3 +73,45 @@
 **Extended:** Background #08080E · Surface #12121C · Text #E8E0F0 · Border #282838
 **Structure:** Cool-Warm Contrast — void black + magenta heat + cool green flash, nightclub energy
 **Atmosphere:** A music festival at midnight, bass drops, laser beams cutting through fog
+
+---
+
+## BLD-06 — Champion Gold (Triadic)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #D8A020 | 44° 74% 49% | Champion Gold / 冠軍金 |
+| Secondary 30% | #1E8848 | 148° 62% 33% | Victory Green / 勝利綠 |
+| Accent 10% | #C83028 | 3° 66% 47% | Trophy Red / 獎盃紅 |
+
+**Extended:** Background #FBF8F0 · Surface #F4ECDA · Text #1E1408 · Border #D8C890
+**Structure:** Triadic — 44° / 148° / 3°, near-equidistant (104°/145° intervals), high saturation S>60% per bold spec (§3.1 triadic, §5.1 high saturation tier)
+**Atmosphere:** A championship podium, gold confetti raining down, the roar of the crowd
+
+---
+
+## BLD-07 — Thunder Violet (Modified Triadic)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #5828A0 | 264° 60% 39% | Thunder Violet / 雷暴紫 |
+| Secondary 30% | #E87830 | 24° 80% 55% | Lightning Orange / 閃電橘 |
+| Accent 10% | #20C080 | 156° 72% 44% | Storm Teal / 暴風青 |
+
+**Extended:** Background #F2EEF8 · Surface #E4DEF0 · Text #140E20 · Border #B8A8D0
+**Structure:** Modified Triadic — 264° / 24° / 156°, intervals 120°/132° (±12° offset from equidistant per §3.2), all S>60% for maximum punch
+**Atmosphere:** A violet thunderstorm on the horizon, lightning cracking in orange, the sky electric
+
+---
+
+## BLD-08 — Adrenaline (Analogous)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #D82050 | 346° 74% 49% | Adrenaline Red / 腎上腺素紅 |
+| Secondary 30% | #E04888 | 335° 70% 58% | Rush Pink / 衝刺桃 |
+| Accent 10% | #B81878 | 320° 78% 41% | Pulse Magenta / 脈搏洋紅 |
+
+**Extended:** Background #FDF5F8 · Surface #F8E8EE · Text #280810 · Border #E0A8B8
+**Structure:** Analogous — 320°–346° red-magenta band spanning 26°, staying within warm hue range (§3.4 analogous), all S>70% for bold's high-energy requirement
+**Atmosphere:** A heartbeat monitor spiking, pure adrenaline surge, red vision at full intensity

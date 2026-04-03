@@ -73,3 +73,45 @@
 **Extended:** Background #0E0A14 · Surface #181420 · Text #F0E0F0 · Border #2E2840
 **Structure:** Modified Triadic — 328° / 148° / 186°, synthwave color triangle
 **Atmosphere:** An 80s arcade, synthesizer bass pumping, neon tubes buzzing in the dark
+
+---
+
+## DRM-06 — Noir Film (Monochromatic)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #0A0A0E | 240° 16% 4% | Noir Black / 黑色電影黑 |
+| Secondary 30% | #28283C | 240° 20% 20% | Shadow Blue / 陰影藍黑 |
+| Accent 10% | #C8C8E0 | 240° 25% 83% | Silver Screen / 銀幕灰 |
+
+**Extended:** Background #060608 · Surface #101018 · Text #C0C0D0 · Border #1E1E30
+**Structure:** Monochromatic — single hue 240°, three lightness steps (L4%/20%/83%) creating extreme contrast per §5.2; dramatic's dark-base + high-contrast spec achieved through lightness alone
+**Atmosphere:** A film noir detective scene, venetian blind shadows slicing across a silver cigarette case
+
+---
+
+## DRM-07 — Toxic Waste (Split-Complementary)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #0C1008 | 100° 30% 5% | Toxic Black / 毒霧黑 |
+| Secondary 30% | #58D030 | 104° 64% 50% | Radioactive / 輻射綠 |
+| Accent 10% | #D030A0 | 316° 64% 50% | Acid Pink / 酸液粉 |
+
+**Extended:** Background #080C06 · Surface #141810 · Text #C0E0B0 · Border #1E2818
+**Structure:** Split-Complementary — 104° green base → complements at 316° (offset from 284° by 32° per §3.3), dark ground + two vivid accents (S64%) per dramatic's neon-on-dark spec
+**Atmosphere:** A post-apocalyptic wasteland, glowing green puddles, hazard signs in acid pink
+
+---
+
+## DRM-08 — Eclipse (Triadic)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #080410 | 264° 50% 4% | Eclipse / 日蝕黑 |
+| Secondary 30% | #C84020 | 10° 72% 46% | Corona Red / 日冕紅 |
+| Accent 10% | #E8B030 | 42° 80% 55% | Solar Flare / 太陽閃焰金 |
+
+**Extended:** Background #040208 · Surface #0C0818 · Text #E0D0C0 · Border #201020
+**Structure:** Triadic — 264° / 10° / 42°, near-equidistant (106°/32°/222° — compressed triadic per §3.2), ultra-dark base (L4%) with high-S accents (72–80%) per dramatic's extreme contrast spec
+**Atmosphere:** A total solar eclipse, the corona blazing red and gold against the absolute void of the moon's shadow

@@ -73,3 +73,45 @@
 **Extended:** Background #F7F9F3 · Surface #EDF2E5 · Text #1E2814 · Border #C2D0A8
 **Structure:** Split-Complementary — 96° / 45° / 348°, moderate saturation for a natural feel
 **Atmosphere:** Early summer countryside, wildflowers swaying gently in the breeze
+
+---
+
+## ERT-06 — Mushroom Forage (Monochromatic)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #A89888 | 28° 12% 60% | Mushroom / 蘑菇棕 |
+| Secondary 30% | #887868 | 28° 13% 47% | Truffle / 松露棕 |
+| Accent 10% | #685848 | 28° 16% 34% | Forest Floor / 林地土 |
+
+**Extended:** Background #F8F4F0 · Surface #EDE6DE · Text #201A14 · Border #C8BAA8
+**Structure:** Monochromatic — single hue 28°, three lightness steps (L60%/47%/34%) per §5.2, saturation 12–16% within earthy's medium-low range
+**Atmosphere:** Foraging after rain, mushrooms pushing through leaf litter, the rich smell of damp earth
+
+---
+
+## ERT-07 — River Stone (Triadic)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #808878 | 100° 6% 50% | River Stone / 河石綠灰 |
+| Secondary 30% | #887878 | 0° 6% 50% | Warm Stone / 暖石灰 |
+| Accent 10% | #787888 | 240° 6% 50% | Cool Stone / 冷石灰 |
+
+**Extended:** Background #F4F6F4 · Surface #E8ECE8 · Text #1A1C1A · Border #B8BCB4
+**Structure:** Triadic — 100° / 0° / 240°, equidistant 120° spacing per §3.1, all desaturated to S≤6% creating a natural stone palette where hue is barely perceptible
+**Atmosphere:** A dry riverbed, smooth stones in three barely-different tones, geological patience
+
+---
+
+## ERT-08 — Harvest Table (Cool-Warm Contrast)
+
+| Role | Hex | HSL | Color Name |
+|------|-----|-----|------------|
+| Primary 60% | #C8A878 | 32° 37% 63% | Wheat Gold / 小麥金 |
+| Secondary 30% | #7898A0 | 192° 16% 55% | Well Water / 井水藍 |
+| Accent 10% | #A86040 | 18° 45% 46% | Kiln Brick / 窯磚紅 |
+
+**Extended:** Background #FAF6F0 · Surface #F2E8DA · Text #221A10 · Border #D8C8A8
+**Structure:** Cool-Warm Contrast — warm wheat (32°) + cool well-water (192°) + warm brick (18°), 160° temperature gap per §3.5, saturation 16–45% within earthy's medium range
+**Atmosphere:** A farm-to-table dinner at dusk, wooden platters, ceramic pitchers of water, brick hearth glowing
